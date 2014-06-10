@@ -1,0 +1,32 @@
+.home {
+	background-color: white;
+	@include category;
+
+	section {
+		display: none;
+	}
+
+	/* Responsive 641px+ */
+	@media #{$medium-up} {
+
+		// article {
+		// 	&:last-of-type {
+		// 		display: none;
+		// 	}
+		// }
+
+		section {
+			display: block;
+		}
+
+	}
+
+	@media #{$large-up} {
+
+		// article:last-of-type {
+		// 	display: none;
+		// }
+
+	}
+
+}

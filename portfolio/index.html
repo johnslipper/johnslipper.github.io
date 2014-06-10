@@ -1,0 +1,12 @@
+---
+layout: category
+title: Portfolio > John Slipper - Web Developer
+category: Portfolio
+---
+<div id="ajax" class="grid category">
+	{% for post in site.posts %}
+	  {% if post.category contains 'portfolio' %}
+	    {% include post-preview.html %}
+	  {% endif %}
+	{% endfor %}
+</div>
