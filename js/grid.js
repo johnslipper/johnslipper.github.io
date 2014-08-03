@@ -1,4 +1,3 @@
-var $window = $(window);
 var $boxes;
 
 function resizeStuff(width) {
