@@ -21,6 +21,9 @@
         <time datetime="{{ page.date }}" title="{{ page.date | date_to_long_string }}">{{ page.date | date_to_string }}</time>
         <h2>{{ page.title }}</h2>
         {{ content }}
+        {% if page.update %}
+        <div class="panel callout"><p><strong>UPDATE:</strong> {{ page.update }}</p></div>
+        {% endif %}
         {% if page.gallery %}
         <ul class="small-block-grid-3 clearing-thumbs" data-clearing>
           {% for image in page.gallery %}

@@ -36,7 +36,7 @@ gallery:
 	url: '/img/posts-full/who-cares-responses.jpg',
 	caption: 'Political party responses page'
 }
-link-website: 'http://www.whocares.org.nz'
+update: 'The website has now been taken down for the NZ elections.'
 ---
 
 Do you care about New Zealand carer wages? Visit this site to show your support.
