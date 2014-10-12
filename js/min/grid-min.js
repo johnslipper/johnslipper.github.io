@@ -1,1 +1,0 @@
-function resizeStuff(e){$boxes.height(e>641?600:"auto")}var $boxes;$window.resize(function(){var e=$window.width();resizeStuff(e)}),$(function(){$boxes=$(".js-me-preview, .js-post-preview");var e=$window.width();resizeStuff(e)});

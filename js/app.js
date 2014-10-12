@@ -15,6 +15,8 @@ $window.scroll(function() {
 
 $(function() {
 
+	FastClick.attach(document.body); // FastClick
+
 	$body = $('body');
 	$header = $('header');
 
