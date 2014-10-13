@@ -1,8 +1,7 @@
 .DS_Store
 
-.sass-cache
-
-/.sass-cache/
-/_site/
-
 /config.codekit
+
+/_scss/.sass-cache/
+
+/_site/
