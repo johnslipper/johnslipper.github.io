@@ -13039,7 +13039,7 @@ header {
   header .logo:before {
     display: none;
     position: absolute;
-    top: 35px;
+    top: 36px;
     left: 16px;
     content: "";
     width: 7px;
