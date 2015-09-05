@@ -31,7 +31,7 @@ gallery:
 	url: '/img/posts-full/vnde-2.jpg',
 	caption: 'Vnde website'
 }
-link-website: 'http://www.vnde.co.nz'
+update: 'VNDE has now re-branded to Arahi and changing the website.'
 ---
 
 Introducing Vnde - a non-alcoholic beverage made from premium New Zealand fruit.
