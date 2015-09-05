@@ -17,7 +17,7 @@ hero: {
 	alt: Sticker mid-peel,
 	margin-top: -8%
 }
-link-website: 'http://www.knowyourrights.co.nz'
+update: 'The advertising campaign has ended. The website has been taken down.' 
 ---
 
 Development of a single page responsive website for the [Commerce Commission](http://www.comcom.govt.nz "Commerce Commission") detailing the recent changes in consumer laws.
