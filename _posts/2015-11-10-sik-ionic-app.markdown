@@ -47,20 +47,20 @@ gallery:
 	url: '/img/posts-full/sik-app-6.png',
 	caption: 'Settings screen'
 }
-link-website: https://github.com/johnslipper/sik-ionic
+link-files: https://github.com/johnslipper/sik-ionic
 ---
 
-Fourth iteration of a personal project to store the songs I've learned over the years on my guitar, on my smartphone.
+Fourth iteration of a personal project to store the songs I've learned over the years on my smartphone.
 
-As soon as I'm asked to play a song on my guitar is the moment I instantly forget everything I've ever learned. This app is a way of quickly listing the songs I know along with lyrics and chords to give me some inspiration. Also useful to refresh on those old songs I haven't played in a while.
+As soon as I'm asked to play a song on my guitar I seem to instantly forget everything I've ever learned. This app is a way of quickly listing the songs I know along with lyrics and chords to give me some inspiration. Also useful to refresh on those old songs I haven't played in a while.
 
-The second purpose of this app is to act as my version of the 'MVC Todo' app in that it is the implementation of the same idea across different frameworks, to test out capabilities. The app originally started out as a simple CMS site adapted for phone but later became responsive with offline support via AppCache (oh the pain). Since the rise of full-stack JavaScript solutions I decided Ionic would be a great way of building on AngularJS knowledge and applying it in the mobile environment.
+The second purpose of this app is to act as my version of the 'MVC Todo' app in that it is the implementation of the same idea across different frameworks, to test out capabilities. The app originally started out as a simple CMS site adapted for phone but later became responsive with offline support via AppCache (oh the pain). Since the rise of hybrid app frameworks I decided the next version should be made in Ionic, as it would be a great way of building on existing AngularJS knowledge and applying it to the mobile environment.
 
 This app now runs natively on my phone via Ionic and Cordova and features:
 
 - Offline local song database storage via PouchDB (IndexedDB or WebSQL)
-- Real-time synchronisation with Cloudant service that's maintained across offine timeframes
-- Add song lyrics (with online search)
-- Add multiple chord sections
+- Real-time synchronisation with Cloudant service (resumes whenever phone becomes online)
+- Add chords sections & song lyrics (with online search)
 - Guitar chord visualisation on fretboard via jTab
 - Attach song artwork via iTunes API
+- Song filtering
