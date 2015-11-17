@@ -19,7 +19,11 @@ hero: {
 	url: '/img/posts-full/nzbn-hero.png',
 	alt: NZBN Identity Animation,
 }
-link-demo: 'http://codepen.io/johnslipper/full/yYeNBr/'
+codepen-embed: {
+	id: yYeNBr,
+	height: 320
+}
+
 ---
 
 A test of the capabilities of the Greensock Animation Platform (GSAP) for the New Zealand Business Number as a viable animated GIF replacement.
