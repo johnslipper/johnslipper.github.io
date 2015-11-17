@@ -4,6 +4,7 @@ layout: post
 title: NZBN Identity SVG Animation
 category: demos
 category-title: GSAP Animation Experiment
+comments: true
 tags:
 - CSS
 - HTML

@@ -4,6 +4,7 @@ layout: post
 title: Songs I Know Ionic App
 category: portfolio
 category-title: Personal Project
+comments: true
 tags:
 - Ionic
 - AngularJS
