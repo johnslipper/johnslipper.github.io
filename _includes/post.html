@@ -31,6 +31,9 @@
           {% endfor %}
         </ul>
         {% endif %}
+        {% if page.codepen-embed %}
+        {% include codepen-embed.html %}
+        {% endif %}
         <div class="actions">
           {% if page.link-website %}
           <a class="button brand4" href="{{ page.link-website }}" target="_blank"><i class="icon-eye" aria-hidden="true"></i> Open website</a>
@@ -64,10 +67,10 @@
       <ul>
         {% if page.previous.url %}
         <li class="small-6 column medium-text-left"><a data-tooltip="right" data-options="disable_for_touch:true" class="prev tip-right" href="{{page.previous.url}}" title="Last post: {{page.previous.title}}"><i class="icon-left-open" aria-hidden="true"></i><span>Prev Post</span></a></li>
-        {% endif %} 
+        {% endif %}
         {% if page.next.url %}
         <li class="small-6 column medium-text-right"><a data-tooltip="left" data-options="disable_for_touch:true" class="next tip-left" href="{{page.next.url}}" title="Next up: {{page.next.title}}"><span>Next Post</span><i class="icon-right-open" aria-hidden="true"></i></a></li>
-        {% endif %} 
+        {% endif %}
       </ul>
     </nav>
   </section>
