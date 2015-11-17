@@ -57,7 +57,7 @@
 			background-color: white;
 		}
 	}
-	
+
 	@media #{$xlarge-up} {
 		h2 {
 			font-size: 1.6rem;
@@ -135,7 +135,7 @@
 		z-index: 1;
 		height: 3rem;
 		padding: 1rem 2rem;
-		margin-bottom: 2rem;
+		// margin-bottom: 2rem;
 		text-align: center;
 		text-transform: uppercase;
 		color: $color;
@@ -168,7 +168,7 @@
 	}
 	.post-body {
 		position: relative;
-		margin-bottom: 2rem;
+		// margin-bottom: 2rem;
 		.row .column > p {
 			&:first-of-type {
 				color: lighten(black, 40%);
@@ -354,7 +354,7 @@
 			}
 		}
 	}
-	
+
 	@media #{$large-up} {
 		.hero {
 			&.medium, &.large, &.xlarge {

@@ -16,6 +16,9 @@
         <!-- <div id="ajax"> -->
           {% include post.html %}
         <!-- </div> -->
+        {% if page.comments %}
+        {% include disqus.html %}
+        {% endif %}
         <!-- close the off-canvas menu -->
         <a class="exit-off-canvas"></a>
         <footer>

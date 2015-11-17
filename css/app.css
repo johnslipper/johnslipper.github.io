@@ -12992,7 +12992,7 @@ button, .button {
     button.brand4:hover, .button.brand4:hover {
       background-color: #ffa034; }
     button.brand4:active, .button.brand4:active {
-      background-color: #ff8800; }
+      background-color: #ff8801; }
     button.brand4.read-more, .button.brand4.read-more {
       font-style: italic; }
     button.brand4 i, .button.brand4 i {
@@ -13945,7 +13945,7 @@ footer .social {
     .post-preview.portfolio button:hover, .post-preview.portfolio .button:hover {
       background-color: #ffa034; }
     .post-preview.portfolio button:active, .post-preview.portfolio .button:active {
-      background-color: #ff8800; }
+      background-color: #ff8801; }
     .post-preview.portfolio button.read-more, .post-preview.portfolio .button.read-more {
       font-style: italic; }
     .post-preview.portfolio button i, .post-preview.portfolio .button i {
@@ -14006,7 +14006,6 @@ footer .social {
     z-index: 1;
     height: 3rem;
     padding: 1rem 2rem;
-    margin-bottom: 2rem;
     text-align: center;
     text-transform: uppercase;
     color: #a2206c;
@@ -14028,8 +14027,7 @@ footer .social {
     .post .tags ul {
       margin-left: 0; }
   .post .post-body {
-    position: relative;
-    margin-bottom: 2rem; }
+    position: relative; }
     .post .post-body .row .column > p:first-of-type {
       color: #666666;
       margin-top: 1.25rem;
@@ -14229,7 +14227,6 @@ footer .social {
       z-index: 1;
       height: 3rem;
       padding: 1rem 2rem;
-      margin-bottom: 2rem;
       text-align: center;
       text-transform: uppercase;
       color: #ff941a;
@@ -14251,8 +14248,7 @@ footer .social {
       .post.portfolio .tags ul {
         margin-left: 0; }
     .post.portfolio .post-body {
-      position: relative;
-      margin-bottom: 2rem; }
+      position: relative; }
       .post.portfolio .post-body .row .column > p:first-of-type {
         color: #666666;
         margin-top: 1.25rem;
@@ -14454,7 +14450,6 @@ footer .social {
       z-index: 1;
       height: 3rem;
       padding: 1rem 2rem;
-      margin-bottom: 2rem;
       text-align: center;
       text-transform: uppercase;
       color: #0098fd;
@@ -14476,8 +14471,7 @@ footer .social {
       .post.demos .tags ul {
         margin-left: 0; }
     .post.demos .post-body {
-      position: relative;
-      margin-bottom: 2rem; }
+      position: relative; }
       .post.demos .post-body .row .column > p:first-of-type {
         color: #666666;
         margin-top: 1.25rem;
@@ -14643,3 +14637,12 @@ footer .social {
 .clearing-container .visible-img img {
   max-width: 1200px;
   max-height: initial; }
+
+/* DISQUS COMMENTS SECTION
+**************************/
+.comments {
+  background-color: white;
+  padding-bottom: 3rem; }
+  @media only screen and (max-width: 40em) {
+    .comments {
+      padding-top: 2rem; } }
