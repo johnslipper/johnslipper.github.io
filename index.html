@@ -25,6 +25,8 @@ title: John Slipper - Web Developer
   </section>
   <!-- ARTICLES HERE -->
   {% for post in site.posts %}
+  {% if post.hidden == null %}
     {% include post-preview.html %}
+  {% endif %}
   {% endfor %}
 </div>
