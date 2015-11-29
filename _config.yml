@@ -1,6 +1,6 @@
 name: John Slipper - Web Developer
-markdown: redcarpet
-pygments: true
+markdown: kramdown
+highlighter: pygments
 exclude: [config.codekit, README.md, Gemfile, Gemfile.lock, bower.json, package.json]
 permalink: /:title
 comments: false
