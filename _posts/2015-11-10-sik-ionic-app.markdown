@@ -2,7 +2,7 @@
 date: 2015/11/10 20:59:12 +1200
 layout: post
 title: Songs I Know Ionic App
-category: portfolio
+category: demos
 category-title: Personal Project
 comments: true
 tags:
