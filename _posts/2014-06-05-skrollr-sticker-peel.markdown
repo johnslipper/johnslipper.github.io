@@ -30,7 +30,7 @@ gallery:
 	url: '/img/posts-full/skrollr-sticker-peel-3.png',
 	caption: 'After animation'
 }
-link-demo: 'http://demo.capiche.co.nz/sticker/'
+link-demo: 'http://codepen.io/johnslipper/pen/HbEgk'
 ---
 
 Here's a little bit of peel-able fun I had whilst learning how to use the excellent [skrollr](http://prinzhorn.github.io/skrollr/ "Skrollr JavaScript library") JavaScript library.
