@@ -2,14 +2,14 @@
 {% include ascii.html %}
 <html lang="en">
     <head>
-        {% include head.html %} {% include analytics.html %}
+        {% include head.html %}
     </head>
     <body>
         <header>
             {% include header.html %}
         </header>
         <main>
-            {% include post.html %}
+            {{jekyll.environment}} {% include post.html %}
         </main>
         <footer>
             {% include footer.html %}

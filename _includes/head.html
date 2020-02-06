@@ -3,3 +3,5 @@
 <meta property="og:locale" content="en_GB" />
 <title>{{ page.title }}</title>
 <link rel="shortcut icon" href="/img/js.png" />
+{% if jekyll.environment == 'production' %} {% include analytics.html %} {%
+endif %}
