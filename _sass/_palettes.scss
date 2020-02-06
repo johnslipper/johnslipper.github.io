@@ -1,0 +1,42 @@
+// Get colour from palettes
+@function getColor($color, $tone) {
+    @if map-has-key($palettes, $color) {
+        $color: map-get($palettes, $color);
+
+        @if map-has-key($color, $tone) {
+            $tone: map-get($color, $tone);
+            @return $tone;
+        }
+
+        @warn "unknown tone `#{$tone}` in color";
+        @return null;
+    }
+
+    @warn "unknown color `#{$color}` in palette";
+    @return null;
+}
+
+@mixin defineColorVariable($variable, $color, $tone) {
+    #{$variable}: getColor($color, $tone);
+}
+
+$palettes: (
+    primary: (
+        darkest: hsl(270, 25%, 33%),
+        dark: hsl(270, 25%, 30%),
+        mediumDark: hsl(270, 25%, 40%),
+        medium: hsl(270, 25%, 50%),
+        mediumLight: hsl(270, 25%, 65%),
+        light: hsl(270, 25%, 85%),
+        lightest: hsl(270, 25%, 100%)
+    ),
+    neutral: (
+        darkest: hsl(204, 7%, 20%),
+        dark: hsl(204, 7%, 30%),
+        mediumDark: hsl(204, 7%, 40%),
+        medium: hsl(204, 7%, 50%),
+        mediumLight: hsl(204, 7%, 65%),
+        light: hsl(204, 7%, 85%),
+        lightest: hsl(204, 7%, 100%)
+    )
+);
