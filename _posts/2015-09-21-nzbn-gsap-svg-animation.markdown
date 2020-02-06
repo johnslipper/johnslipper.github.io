@@ -1,6 +1,5 @@
 ---
 date: 2015/09/21 18:16:10 +1300
-layout: post
 title: NZBN Identity SVG Animation
 category: demos
 category-title: GSAP Animation Experiment

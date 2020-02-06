@@ -1,12 +1,9 @@
 ---
-layout: category
 title: Demos > John Slipper - Web Developer
 category: Demos
 ---
+
 <div id="ajax" class="grid category">
-	{% for post in site.posts %}
-	  {% if post.category contains 'demos' %}
-	    {% include post-preview.html %}
-	  {% endif %}
-	{% endfor %}
+    {% for post in site.posts %} {% if post.category contains 'demos' %} {%
+    include post-preview.html %} {% endif %} {% endfor %}
 </div>

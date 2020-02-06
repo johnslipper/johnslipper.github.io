@@ -1,6 +1,5 @@
 ---
 date: 2014/08/03 17:41:59 +1300
-layout: post
 title: "Is it time to drop JQuery?"
 category: posts
 category-title: Readings

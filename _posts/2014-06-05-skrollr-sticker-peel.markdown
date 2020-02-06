@@ -1,6 +1,5 @@
 ---
 date: 2014/06/05 13:15:56 +1300
-layout: post
 title: Skrollr Sticker Peel
 category: demos
 category-title: Peelable Fun!

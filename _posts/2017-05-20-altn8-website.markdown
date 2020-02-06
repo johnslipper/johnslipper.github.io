@@ -1,6 +1,5 @@
 ---
 date: 2017/05/20 13:00:00 +1100
-layout: post
 title: "ALTN8 Festival 2017 Website"
 category: portfolio
 category-title: Portfolio Piece

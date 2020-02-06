@@ -1,6 +1,5 @@
 ---
 date: 2015/01/13 18:16:10 +1300
-layout: post
 title: Capiche Relish SVG Animation
 category: demos
 category-title: Vector Animation Experiment

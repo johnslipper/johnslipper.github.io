@@ -1,6 +1,5 @@
 ---
 date: 2014/01/03 11:25:45 +1300
-layout: post
 title: Bateson Way Website
 category: portfolio
 category-title: Portfolio Piece

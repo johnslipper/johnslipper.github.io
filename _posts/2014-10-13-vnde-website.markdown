@@ -1,6 +1,5 @@
 ---
 date: 2014/10/13 18:48:00 +1200
-layout: post
 title: Vnde Website
 category: portfolio
 category-title: Portfolio Piece

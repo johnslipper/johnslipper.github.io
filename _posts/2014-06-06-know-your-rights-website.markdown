@@ -1,6 +1,5 @@
 ---
 date: 2014/06/06 16:15:47 +1300
-layout: post
 title: Know Your Rights Website
 category: portfolio
 category-title: Portfolio Piece

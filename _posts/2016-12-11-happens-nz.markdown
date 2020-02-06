@@ -1,6 +1,5 @@
 ---
 date: 2016/12/10 14:45:54 +1200
-layout: post
 title: "Never Happens? Happens Website"
 category: portfolio
 category-title: Portfolio Piece

@@ -1,6 +1,5 @@
 ---
 date: 2015/09/05 16:52:34 +1200
-layout: post
 title: Key Skills Website & Job App
 category: portfolio
 category-title: Portfolio Piece

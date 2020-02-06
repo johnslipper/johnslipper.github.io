@@ -1,6 +1,5 @@
 ---
 date: 2014/05/15 14:08:00 +1300
-layout: post
 title: To the Drawing Board ...Again!
 category: posts
 category-title: Website Refresh!
