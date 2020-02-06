@@ -9,7 +9,7 @@
     --font-family-sans-serif: "Lato", Arial, Helvetica, sans-serif;
 
     --heading-line-height: 1.15;
-    --heading-font-weight: 700;
+    --heading-font-weight: 900;
 
     @include defineColorVariable(--link-color, primary, mediumDark);
 }
