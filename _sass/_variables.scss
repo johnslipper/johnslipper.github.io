@@ -10,6 +10,7 @@
 
     --heading-line-height: 1.15;
     --heading-font-weight: 900;
+    @include defineColorVariable(--heading-color, primary, mediumDark);
 
     @include defineColorVariable(--link-color, primary, mediumDark);
 }
