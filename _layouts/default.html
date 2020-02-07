@@ -5,14 +5,11 @@
         {% include head.html %}
     </head>
     <body>
-        <header>
-            {% include header.html %}
-        </header>
         <main>
-            {{jekyll.environment}} {% include post.html %}
+            {% include post.html %}
         </main>
         <footer>
-            {% include footer.html %}
+            {% include footer.html %} {% include navigation.html %}
         </footer>
         {% include scripts.html %}
     </body>
