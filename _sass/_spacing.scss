@@ -1,0 +1,92 @@
+.m-a {
+    margin: var(--spacing-base);
+}
+.m-t {
+    margin-top: var(--spacing-base);
+}
+.m-r {
+    margin-right: var(--spacing-base);
+}
+.m-b {
+    margin-bottom: var(--spacing-base);
+}
+.m-l {
+    margin-left: var(--spacing-base);
+}
+.m-x {
+    margin-right: var(--spacing-base);
+    margin-left: var(--spacing-base);
+}
+.m-y {
+    margin-top: var(--spacing-base);
+    margin-bottom: var(--spacing-base);
+}
+
+.p-a {
+    padding: var(--spacing-base);
+}
+.p-t {
+    padding-top: var(--spacing-base);
+}
+.p-r {
+    padding-right: var(--spacing-base);
+}
+.p-b {
+    padding-bottom: var(--spacing-base);
+}
+.p-l {
+    padding-left: var(--spacing-base);
+}
+.p-x {
+    padding-right: var(--spacing-base);
+    padding-left: var(--spacing-base);
+}
+.p-y {
+    padding-top: var(--spacing-base);
+    padding-bottom: var(--spacing-base);
+}
+
+.m--0,
+.p--0 {
+    --spacing-base: var(--spacing-0);
+}
+
+.m--1,
+.p--1 {
+    --spacing-base: var(--spacing-1);
+}
+
+.m--2,
+.p--2 {
+    --spacing-base: var(--spacing-2);
+}
+
+.m--3,
+.p--3 {
+    --spacing-base: var(--spacing-3);
+}
+
+.m--4,
+.p--4 {
+    --spacing-base: var(--spacing-0);
+}
+
+.m--5,
+.p--5 {
+    --spacing-base: var(--spacing-5);
+}
+
+.m--6,
+.p--6 {
+    --spacing-base: var(--spacing-6);
+}
+
+.m--7,
+.p--7 {
+    --spacing-base: var(--spacing-7);
+}
+
+.m--8,
+.p--8 {
+    --spacing-base: var(--spacing-8);
+}
