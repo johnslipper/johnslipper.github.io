@@ -1,0 +1,13 @@
+@media (min-width: 64em) {
+    .site-wrapper {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: var(--spacing-6);
+    }
+
+    .site-footer {
+        position: sticky;
+        top: 0;
+        max-height: 100vh;
+    }
+}
