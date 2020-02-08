@@ -1,43 +1,10 @@
 ---
 title: John Slipper - Web Developer
+layout: page
 ---
 
-<div id="ajax" class="grid home">
-    <section class="me-preview js-me-preview closed">
-        <div class="contact">
-            <div class="row">
-                <div class="medium-6 column">
-                    <figure>
-                        <img
-                            src="/img/me.jpg"
-                            alt="Arty shot of myself looking cool. Well I least that's what I was going for!"
-                        />
-                    </figure>
-                </div>
-                <div class="medium-6 column">
-                    {% include social.html %}
-                </div>
-            </div>
-        </div>
-        <div class="bio">
-            <p class="lead">Hi! My name is John Slipper.</p>
-            <p>
-                I am a frontend web developer in Wellington, New Zealand.
-                <a href="/me/" title="Read more about me">more...</a>
-            </p>
-            <p>
-                Here you’ll find my work related doings including
-                <a href="/demos/" title="View my latest demos">demos</a>,
-                <a href="/portfolio/" title="View my latest portfolio pieces"
-                    >portfolio</a
-                >
-                pieces and other general webby
-                <a href="/posts/" title="View general webby posts">postings</a>.
-            </p>
-        </div>
-        <a href="#" class="close" aria-hidden="true">&times;</a>
-    </section>
+<section>
     <!-- ARTICLES HERE -->
     {% for post in site.posts %} {% if post.hidden == null %} {% include
     post-preview.html %} {% endif %} {% endfor %}
-</div>
+</section>
