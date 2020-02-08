@@ -1,5 +1,14 @@
 @import "./palettes";
 
+/** Breakpoints
+ * (CSS variables currently unavailable in @media) */
+$breakpoints-1: 40em;
+$breakpoints-2: 52em;
+$breakpoints-3: 64em;
+$breakpoints-4: 76em;
+$breakpoints-5: 88em;
+$breakpoints-6: 96em;
+
 :root {
     /* Body */
     --body-color: rgb(238, 236, 236);
