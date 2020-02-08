@@ -17,15 +17,15 @@
   @include defineColorVariable(--heading-color, primary, mediumDark);
 
   /* Spacing */
-  --spacing-0: '0rem';
-  --spacing-1: '0.25rem';
-  --spacing-2: '0.5rem';
-  --spacing-3: '0.75rem';
-  --spacing-4: '1rem';
-  --spacing-5: '1.5rem';
-  --spacing-6: '2rem';
-  --spacing-7: '4rem';
-  --spacing-8: '8rem';
+  --spacing-0: 0rem;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.5rem;
+  --spacing-6: 2rem;
+  --spacing-7: 4rem;
+  --spacing-8: 8rem;
   --spacing-base: var(--spacing-4);
 }
 
