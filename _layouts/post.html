@@ -6,11 +6,14 @@
     </head>
     <body class="layout layout--post">
         <div class="layout__wrapper">
+            <header class="layout__header">
+                {% include header.html %}
+            </header>
             <main class="layout__main">
                 {% include post.html %}
             </main>
             <footer class="layout__footer">
-                {% include footer.html %} {% include navigation.html %}
+                {% include footer.html %}
             </footer>
         </div>
         {% include scripts.html %}

@@ -48,16 +48,20 @@
     @media (min-width: $breakpoints-3) {
         .layout__wrapper {
             display: grid;
-            grid-template-columns: 3fr 1fr;
+            grid-template: "content sidebar1" "content sidebar2" 1fr / 3fr 1fr;
             grid-gap: var(--layout-grid-gap);
         }
 
+        .layout__header {
+            grid-area: sidebar1;
+        }
+
+        .layout__main {
+            grid-area: content;
+        }
+
         .layout__footer {
-            position: sticky;
-            top: calc(
-                var(--layout-padding-lg) + var(--layout-wrapper-padding-lg)
-            );
-            max-height: 100vh;
+            grid-area: sidebar2;
         }
     }
 }
