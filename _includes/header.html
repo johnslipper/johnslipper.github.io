@@ -1,4 +1,9 @@
-<a class="logo" href="/"
-    ><img src="/img/js.svg" alt="John Slipper" /><small>Web Developer</small></a
->
-{% include navigation.html %}
+<div class="header">
+    <a class="header__logo" href="/">
+        {% include icons/js.svg %}
+        <span class="sr-only">Web Developer</span>
+    </a>
+    <nav class="header__navigation">
+        {% include navigation.html %}
+    </nav>
+</div>

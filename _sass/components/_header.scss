@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    .header__logo {
+        display: block;
+        max-width: 3rem;
+        .js__dot {
+            @include defineColorVariable(--js-dot-color, primary, medium);
+            fill: var(--js-dot-color);
+        }
+    }
+    .header__navigation {
+        ul {
+            display: flex;
+            a {
+                display: block;
+                padding: var(--spacing-2);
+                line-height: 1;
+            }
+        }
+    }
+    @media (min-width: $breakpoints-3) {
+        display: initial;
+        .header__logo {
+            max-width: 12rem;
+            .js__dot {
+                @include defineColorVariable(
+                    --js-dot-color,
+                    primary,
+                    mediumDark
+                );
+            }
+            .js__letter {
+                opacity: 0.75;
+            }
+        }
+    }
+}
