@@ -1,8 +1,9 @@
 :root {
     --layout-padding-sm: var(--spacing-2);
     --layout-padding-lg: var(--spacing-4);
-    --layout-wrapper-padding-sm: var(--spacing-2);
-    --layout-wrapper-padding-lg: var(--spacing-5);
+    --layout-wrapper-padding-sm: var(--spacing-4);
+    --layout-wrapper-padding-lg: var(--spacing-6);
+    --layout-grid-gap: var(--spacing-7);
 }
 
 .layout {
@@ -48,7 +49,7 @@
         .layout__wrapper {
             display: grid;
             grid-template-columns: 3fr 1fr;
-            grid-gap: var(--layout-wrapper-padding-lg);
+            grid-gap: var(--layout-grid-gap);
         }
 
         .layout__footer {
