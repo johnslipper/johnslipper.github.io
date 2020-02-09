@@ -1,77 +1,113 @@
-<article class="post {{ page.category }}">
-  {% if page.hero %}
-  {% if page.hero.type == 'bg' %}
-  <div class="hero bg {{ page.hero.size }}" style="background: {{ page.hero.color }};">
-    <figure class="inner" style="background-image: url('{{ page.hero.url }}'); background-color: {{ page.hero.color }}; background-size: {{ page.hero.scale }}; background-position: center {{ page.hero.offset }};"></figure>
-  </div>
-  {% else %}
-  <div class="hero {{ page.hero.size }}">
-    <figure class="inner">
-      <img src="{{ page.hero.url }}" alt="{{ page.hero.alt }}" style="margin-top: {{ page.hero.margin-top }};">
-    </figure>
-  </div>
-  {% endif %}
-  {% endif %}
-  <div class="category">
-    <i class="icon-category" aria-hidden="true"></i><span>{{ page.category-title }}</span>
-  </div>
-  <section class="post-body">
-    <div class="row">
-      <div class="column padded">
-        <time datetime="{{ page.date }}" title="{{ page.date | date_to_long_string }}">{{ page.date | date_to_string }}</time>
-        <h2>{{ page.title }}</h2>
-        {{ content }}
-        {% if page.update %}
-        <div class="panel callout"><p><strong>UPDATE:</strong> {{ page.update }}</p></div>
-        {% endif %}
-        {% if page.gallery %}
-        <ul class="small-block-grid-3 clearing-thumbs" data-clearing>
-          {% for image in page.gallery %}
-            <li><a href="{{ image.url }}" title="Enlarge Image"><img src="{{ image.url }}" alt="{{ image.caption }}" data-caption="{{ image.caption }}"></a></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        {% if page.codepen-embed %}
-        {% include codepen-embed.html %}
-        {% endif %}
-        <div class="actions">
-          {% if page.link-website %}
-          <a class="button brand4" href="{{ page.link-website }}" target="_blank"><i class="icon-eye" aria-hidden="true"></i> Open website</a>
-          {% endif %}
-          {% if page.link-demo %}
-          <a class="button brand3" href="{{ page.link-demo }}" target="_blank"><i class="icon-lightbulb" aria-hidden="true"></i> Open demo</a>
-          {% endif %}
-          {% if page.link-files %}
-          <a class="button brand2" href="{{ page.link-files }}" target="_blank"><i class="icon-down-circled2" aria-hidden="true"></i> Download files</a>
-          {% endif %}
-          {% if page.link-generic %}
-          <a class="button brand1" href="{{ page.link-generic }}" target="_blank"><i class="icon-eye" aria-hidden="true"></i> Open Link</a>
-          {% endif %}
-          {% if page.link-post %}
-          <a class="button brand1" href="{{ page.link-post }}" target="_blank"><i class="icon-eye" aria-hidden="true"></i> View Post</a>
-          {% endif %}
-        </div>
-        {% if page.tags %}
-        <div class="tags">
-          <span>Tags:</span>
-          <ul class="inline-list">
-            {% for tag in page.tags %}
-              <li>{{ tag }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-      </div>
+<article class="post post--{{ page.category }}">
+    <h2 class="post__heading">{{ page.title }}</h2>
+    <div class="post__category">
+        <span>{{ page.category-title }}</span>
     </div>
-    <nav class="row post-nav js-post-nav">
-      <ul>
-        {% if page.previous.url %}
-        <li class="small-6 column medium-text-left"><a data-tooltip="right" data-options="disable_for_touch:true" class="prev tip-right" href="{{page.previous.url}}" title="Last post: {{page.previous.title}}"><i class="icon-left-open" aria-hidden="true"></i><span>Prev Post</span></a></li>
+
+    <time
+        class="post__date"
+        datetime="{{ page.date }}"
+        title="{{ page.date | date_to_long_string }}"
+        >{{ page.date | date_to_string }}</time
+    >
+
+    {% if page.hero %} {% if page.hero.type == 'bg' %}
+    <div
+        class="hero bg {{ page.hero.size }}"
+        style="background: {{ page.hero.color }};"
+    >
+        <figure
+            class="inner"
+            style="background-image: url('{{ page.hero.url }}'); background-color: {{ page.hero.color }}; background-size: {{ page.hero.scale }}; background-position: center {{ page.hero.offset }};"
+        ></figure>
+    </div>
+    {% else %}
+    <div class="hero {{ page.hero.size }}">
+        <figure class="inner">
+            <img
+                src="{{ page.hero.url }}"
+                alt="{{ page.hero.alt }}"
+                style="margin-top: {{ page.hero.margin-top }};"
+            />
+        </figure>
+    </div>
+    {% endif %} {% endif %}
+
+    <div class="post__content">
+        {{ content }}
+    </div>
+
+    {% if page.update %}
+    <div>
+        <p><strong>UPDATE:</strong> {{ page.update }}</p>
+    </div>
+    {% endif %} {% if page.gallery %}
+    <ul class="small-block-grid-3 clearing-thumbs" data-clearing>
+        {% for image in page.gallery %}
+        <li>
+            <a href="{{ image.url }}" title="Enlarge Image"
+                ><img
+                    src="{{ image.url }}"
+                    alt="{{ image.caption }}"
+                    data-caption="{{ image.caption }}"
+            /></a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %} {% if page.codepen-embed %} {% include codepen-embed.html %} {%
+    endif %}
+
+    <div class="post__actions">
+        {% if page.link-website %}
+        <a class="button" href="{{ page.link-website }}" target="_blank"
+            >Open website</a
+        >
+        {% endif %} {% if page.link-demo %}
+        <a class="button" href="{{ page.link-demo }}" target="_blank"
+            >Open demo</a
+        >
+        {% endif %} {% if page.link-files %}
+        <a class="button" href="{{ page.link-files }}" target="_blank"
+            >Download files</a
+        >
+        {% endif %} {% if page.link-generic %}
+        <a class="button" href="{{ page.link-generic }}" target="_blank"
+            >Open Link</a
+        >
+        {% endif %} {% if page.link-post %}
+        <a class="button" href="{{ page.link-post }}" target="_blank"
+            >View Post</a
+        >
         {% endif %}
-        {% if page.next.url %}
-        <li class="small-6 column medium-text-right"><a data-tooltip="left" data-options="disable_for_touch:true" class="next tip-left" href="{{page.next.url}}" title="Next up: {{page.next.title}}"><span>Next Post</span><i class="icon-right-open" aria-hidden="true"></i></a></li>
-        {% endif %}
-      </ul>
+    </div>
+
+    {% if page.tags %}
+    <div class="post__tags">
+        <span>Tags:</span>
+        <ul>
+            {% for tag in page.tags %}
+            <li>{{ tag }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    <nav class="post__nav">
+        <ul>
+            {% if page.previous.url %}
+            <li>
+                <a
+                    href="{{page.previous.url}}"
+                    title="Last post: {{page.previous.title}}"
+                    ><span>Prev Post</span></a
+                >
+            </li>
+            {% endif %} {% if page.next.url %}
+            <li>
+                <a href="{{page.next.url}}" title="Next up: {{page.next.title}}"
+                    ><span>Next Post</span></a
+                >
+            </li>
+            {% endif %}
+        </ul>
     </nav>
-  </section>
 </article>
