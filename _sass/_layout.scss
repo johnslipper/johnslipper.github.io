@@ -8,13 +8,22 @@
 .layout {
     padding: var(--layout-padding-sm);
 
-    &::before {
+    &::before,
+    &::after {
         content: "";
         position: fixed;
-        top: 0;
         left: 0;
         right: 0;
         height: var(--layout-padding-sm);
+        background-color: var(--body-background-color);
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
     }
 
     .layout__wrapper {
@@ -25,7 +34,8 @@
     @media (min-width: $breakpoints-2) {
         padding: var(--layout-padding-lg);
 
-        &::before {
+        &::before,
+        &::after {
             height: var(--layout-padding-lg);
         }
 
