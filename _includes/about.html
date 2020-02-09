@@ -1,6 +1,14 @@
-{% include social.html %} {{site.description}}
-<img
-    style="max-width: 4rem"
-    src="/img/me.jpg"
-    alt="Arty shot of myself looking cool. Well I least that's what I was going for!"
-/>
+<div class="about">
+    <div class="about__photo">
+        <img
+            src="/img/me.jpg"
+            alt="Arty shot of myself looking cool. Well I least that's what I was going for!"
+        />
+    </div>
+    <div class="about__description">
+        {{site.description}}
+        <div class="about__social">
+            {% include social.html %}
+        </div>
+    </div>
+</div>

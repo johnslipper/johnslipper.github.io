@@ -1,0 +1,13 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: var(--spacing-5);
+    .about__description {
+        p {
+            margin-bottom: var(--spacing-2);
+        }
+    }
+    .about__social {
+        margin-top: var(--spacing-5);
+    }
+}
