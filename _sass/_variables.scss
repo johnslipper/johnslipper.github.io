@@ -26,12 +26,12 @@ $breakpoints-6: 96em;
     );
 
     /* Anchor links */
-    @include defineColorVariable(--link-color, primary, mediumDark);
+    @include defineColorVariable(--link-color, first, mediumDark);
 
     /* Headings */
     --heading-line-height: 1.15;
     --heading-font-weight: 900;
-    @include defineColorVariable(--heading-color, primary, mediumDark);
+    @include defineColorVariable(--heading-color, first, mediumDark);
 
     /* Spacing */
     --spacing-0: 0rem;

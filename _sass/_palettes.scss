@@ -21,7 +21,7 @@
 }
 
 $palettes: (
-    primary: (
+    first: (
         darkest: hsl(270, 25%, 33%),
         dark: hsl(270, 25%, 30%),
         mediumDark: hsl(270, 25%, 40%),
@@ -29,6 +29,9 @@ $palettes: (
         mediumLight: hsl(270, 25%, 65%),
         light: hsl(270, 25%, 85%),
         lightest: hsl(270, 25%, 100%)
+    ),
+    second: (
+        dark: hsl(191.7, 36.8%, 41%)
     ),
     neutral: (
         darkest: hsl(188, 15%, 20%),

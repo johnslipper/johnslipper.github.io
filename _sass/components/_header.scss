@@ -6,7 +6,7 @@
         display: block;
         max-width: 3rem;
         .js__dot {
-            @include defineColorVariable(--js-dot-color, primary, dark);
+            @include defineColorVariable(--js-dot-color, first, dark);
             fill: var(--js-dot-color);
         }
     }
