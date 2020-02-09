@@ -11,11 +11,19 @@ $breakpoints-6: 96em;
 
 :root {
     /* Body */
-    --body-color: rgb(238, 236, 236);
+    @include defineColorVariable(--body-color, neutral, mediumDark);
+    @include defineColorVariable(--body-background-color, neutral, lightest);
     --body-font-size: 1rem;
     --body-font-weight: 400;
     --body-line-height: 1.65;
     --body-font-family: "Lato", Arial, Helvetica, sans-serif;
+
+    /* Layout */
+    @include defineColorVariable(
+        --layout-wrapper-background-color,
+        neutral,
+        light
+    );
 
     /* Anchor links */
     @include defineColorVariable(--link-color, primary, mediumDark);
