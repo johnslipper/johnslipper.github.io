@@ -1,0 +1,33 @@
+.post-preview {
+    --category-color: var(--category-portfolio-color);
+    .post-preview__category {
+        text-transform: uppercase;
+        color: var(--category-color);
+    }
+
+    .post-preview__heading {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        font-size: 2.5rem;
+        a {
+            display: block;
+            text-decoration: none;
+            &::after {
+                content: "";
+                display: block;
+                width: 3rem;
+                height: 0.25rem;
+                margin-top: 0.25rem;
+                background-color: var(--category-color);
+                border-radius: 0.5rem;
+                transition: width 250ms;
+            }
+            &:hover,
+            &:focus {
+                &::after {
+                    width: 6rem;
+                }
+            }
+        }
+    }
+}
