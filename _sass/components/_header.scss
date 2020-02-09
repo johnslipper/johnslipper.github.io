@@ -1,14 +1,16 @@
 .header {
     display: flex;
     justify-content: space-between;
+
     .header__logo {
         display: block;
         max-width: 3rem;
         .js__dot {
-            @include defineColorVariable(--js-dot-color, primary, medium);
+            @include defineColorVariable(--js-dot-color, primary, dark);
             fill: var(--js-dot-color);
         }
     }
+
     .header__navigation {
         ul {
             display: flex;
@@ -19,20 +21,29 @@
             }
         }
     }
+
+    .header__about {
+        display: none;
+    }
+
     @media (min-width: $breakpoints-3) {
-        display: initial;
+        // display: initial;
+        flex-wrap: wrap;
+        .header__navigation {
+            flex-basis: 40%;
+            ul {
+                display: initial;
+            }
+        }
+
         .header__logo {
-            max-width: 12rem;
-            .js__dot {
-                @include defineColorVariable(
-                    --js-dot-color,
-                    primary,
-                    mediumDark
-                );
-            }
-            .js__letter {
-                opacity: 0.75;
-            }
+            max-width: 100%;
+            flex-basis: 60%;
+            padding-right: 1rem;
+        }
+
+        .header__about {
+            display: initial;
         }
     }
 }

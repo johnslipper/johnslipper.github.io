@@ -59,13 +59,14 @@
 
         .layout__wrapper {
             display: grid;
-            grid-template: "content sidebar" "content sidebar" 1fr / 3fr 1fr;
+            grid-template: "content sidebar" / 3fr 1fr;
             grid-gap: var(--layout-grid-gap);
             padding: var(--spacing-5);
         }
 
         .layout__header {
             position: initial;
+            grid-area: sidebar;
         }
 
         .layout__main {
@@ -73,6 +74,10 @@
             &::before {
                 display: none;
             }
+        }
+
+        .layout__footer {
+            display: none;
         }
     }
 }
