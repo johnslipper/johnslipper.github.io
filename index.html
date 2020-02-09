@@ -3,7 +3,7 @@ title: John Slipper - Web Developer
 layout: page
 ---
 
-<section>
+<section class="layout__articles">
     <!-- ARTICLES HERE -->
     {% for post in site.posts %} {% if post.hidden == null %} {% include
     post-preview.html %} {% endif %} {% endfor %}

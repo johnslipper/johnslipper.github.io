@@ -49,6 +49,12 @@
         }
     }
 
+    .layout__articles {
+        > article {
+            margin-bottom: var(--spacing-7);
+        }
+    }
+
     @media (min-width: $breakpoints-3) {
         padding: var(--layout-padding-lg);
 
