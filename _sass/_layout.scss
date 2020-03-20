@@ -65,7 +65,7 @@
 
         .layout__wrapper {
             display: grid;
-            grid-template: "content sidebar" / 3fr 1fr;
+            grid-template: "sidebar content ..." / 1fr 3fr 1fr;
             grid-gap: var(--layout-grid-gap);
             padding: var(--spacing-5);
         }
