@@ -1,8 +1,13 @@
 .social {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.5rem;
     svg {
         height: 2rem;
+    }
+
+    @media (min-width: $breakpoints-3) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }

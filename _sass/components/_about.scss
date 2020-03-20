@@ -1,13 +1,21 @@
 .about {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: var(--spacing-5);
+    .about__wrapper {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        grid-gap: var(--spacing-5);
+    }
+
+    .about__photo {
+        width: 4.75rem;
+        img {
+            border: 5px solid var(--image-border-color);
+        }
+    }
+
     .about__description {
+        margin-top: var(--spacing-5);
         p {
             margin-bottom: var(--spacing-2);
         }
-    }
-    .about__social {
-        margin-top: var(--spacing-5);
     }
 }

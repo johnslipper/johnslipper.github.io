@@ -47,6 +47,9 @@ $breakpoints-6: 96em;
 
     /* Categories */
     @include defineColorVariable(--category-portfolio-color, second, dark);
+
+    /* Other */
+    @include defineColorVariable(--image-border-color, first, lightest);
 }
 
 /* Dark theme overrides */
