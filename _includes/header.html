@@ -1,12 +1,16 @@
 <div class="header">
-    <a class="header__logo" href="/">
-        {% include icons/js.svg %}
-        <span class="sr-only">Web Developer</span>
-    </a>
-    <nav class="header__navigation">
-        {% include navigation.html %}
-    </nav>
-    <div class="header__about">
-        {% include about.html %}
+    <div class="header__wrapper">
+        <a class="header__logo" href="/">
+            {% include icons/js.svg %}
+            <span class="sr-only">Web Developer</span>
+        </a>
+
+        <nav class="header__navigation">
+            {% include navigation.html %}
+        </nav>
+
+        <div class="header__about">
+            {% include about.html %}
+        </div>
     </div>
 </div>

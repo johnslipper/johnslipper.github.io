@@ -1,12 +1,3 @@
-:root {
-    --layout-padding-sm: var(--spacing-2);
-    --layout-padding-lg: var(--spacing-4);
-    --layout-wrapper-padding-sm: var(--spacing-4);
-    --layout-wrapper-padding-lg: var(--spacing-6);
-    --layout-fixed-header-spacing: var(--spacing-7);
-    --layout-grid-gap: var(--spacing-7);
-}
-
 .layout {
     padding: var(--layout-padding-sm);
 
@@ -29,7 +20,6 @@
     }
 
     .layout__wrapper {
-        padding: var(--layout-wrapper-padding-sm);
         background-color: var(--layout-wrapper-background-color);
     }
 
@@ -38,10 +28,10 @@
         top: var(--layout-padding-sm);
         left: var(--layout-padding-sm);
         right: var(--layout-padding-sm);
-        padding: var(--layout-wrapper-padding-sm);
     }
 
     .layout__main {
+        padding: var(--layout-wrapper-padding-sm);
         &::before {
             content: "";
             display: block;
@@ -65,21 +55,30 @@
 
         .layout__wrapper {
             display: grid;
-            grid-template: "sidebar content ..." / 1fr 3fr 1fr;
+            grid-template: "sidebar content ..." / 2fr 4fr 1fr;
             grid-gap: var(--layout-grid-gap);
-            padding: var(--spacing-5);
         }
 
         .layout__header {
             position: initial;
             grid-area: sidebar;
-            padding: 0;
         }
 
         .layout__main {
             grid-area: content;
+            padding: var(--layout-wrapper-padding-lg);
             &::before {
                 display: none;
+            }
+            &::after {
+                content: "";
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 15%;
+                height: 15%;
+                background-color: var(--header-background-color);
+                clip-path: polygon(100% 100%, 100% 0px, 0% 100%);
             }
         }
 

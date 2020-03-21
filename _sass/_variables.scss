@@ -19,6 +19,12 @@ $breakpoints-6: 96em;
     --body-font-family: "Lato", Helvetica, Arial, sans-serif;
 
     /* Layout */
+    --layout-padding-sm: var(--spacing-2);
+    --layout-padding-lg: var(--spacing-4);
+    --layout-wrapper-padding-sm: var(--spacing-5);
+    --layout-wrapper-padding-lg: var(--spacing-6);
+    --layout-fixed-header-spacing: 6rem;
+    --layout-grid-gap: var(--spacing-7);
     @include defineColorVariable(
         --layout-wrapper-background-color,
         neutral,
@@ -45,7 +51,11 @@ $breakpoints-6: 96em;
     --spacing-8: 8rem;
     --spacing-base: var(--spacing-4);
 
-    /* Categories */
+    /* Header */
+    --header-background-color: var(--body-background-color);
+    @include defineColorVariable(--logo-dot-color, first, dark);
+
+    /* Articles */
     @include defineColorVariable(--category-portfolio-color, second, dark);
 
     /* Other */
