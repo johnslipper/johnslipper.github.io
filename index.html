@@ -1,10 +1,13 @@
 ---
 title: John Slipper - Web Developer
 layout: page
+category: Latest
 ---
 
-<section class="layout__articles">
+<h1>{{page.category}}</h1>
+
+<div class="layout__articles">
     <!-- ARTICLES HERE -->
     {% for post in site.posts %} {% if post.hidden == null %} {% include
     post-preview.html %} {% endif %} {% endfor %}
-</section>
+</div>

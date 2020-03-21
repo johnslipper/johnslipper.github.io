@@ -1,9 +1,12 @@
 ---
 title: Posts > John Slipper - Web Developer
 category: Posts
+layout: page
 ---
 
-<div id="ajax" class="grid category">
+<h1>{{page.category}}</h1>
+
+<div class="layout__articles">
     {% for post in site.posts %} {% if post.category contains 'posts' %} {%
     include post-preview.html %} {% endif %} {% endfor %}
 </div>
