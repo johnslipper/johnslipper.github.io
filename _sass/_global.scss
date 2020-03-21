@@ -32,3 +32,29 @@ svg {
     white-space: nowrap !important;
     border: 0 !important;
 }
+
+@mixin animated-underline(
+    $widthStart: 15%,
+    $widthEnd: 100%,
+    $color: var(--heading-underline-color),
+    $height: 0.25rem
+) {
+    position: relative;
+    outline-color: $color;
+    &::after {
+        content: "";
+        display: block;
+        width: $widthStart;
+        height: $height;
+        margin-top: $height;
+        background-color: $color;
+        border-radius: $height * 2;
+        transition: width 250ms;
+    }
+    &:hover,
+    &:focus {
+        &::after {
+            width: $widthEnd;
+        }
+    }
+}
