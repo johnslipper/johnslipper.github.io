@@ -24,7 +24,6 @@ $breakpoints-6: 96em;
     --layout-wrapper-padding-sm: var(--spacing-5);
     --layout-wrapper-padding-lg: var(--spacing-6);
     --layout-fixed-header-spacing: 6rem;
-    --layout-grid-gap: var(--spacing-7);
     @include defineColorVariable(
         --layout-wrapper-background-color,
         neutral,

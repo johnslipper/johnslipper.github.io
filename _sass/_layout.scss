@@ -56,7 +56,6 @@
         .layout__wrapper {
             display: grid;
             grid-template: "sidebar content ..." / 2fr 4fr 1fr;
-            grid-gap: var(--layout-grid-gap);
         }
 
         .layout__header {
