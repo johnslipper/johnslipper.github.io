@@ -25,7 +25,7 @@ $breakpoints-8: 124em;
     --layout-padding-lg: var(--spacing-4);
     --layout-wrapper-padding-sm: var(--spacing-5);
     --layout-wrapper-padding-lg: var(--spacing-6);
-    --layout-fixed-header-spacing: 6rem;
+    --layout-fixed-header-spacing: 4rem;
     --layout-header-max-width: 22rem;
     @include defineColorVariable(
         --layout-wrapper-background-color,
@@ -51,7 +51,7 @@ $breakpoints-8: 124em;
     --spacing-5: 1.5rem;
     --spacing-6: 2rem;
     --spacing-7: 4rem;
-    --spacing-8: 8rem;
+    --spacing-8: 6rem;
     --spacing-base: var(--spacing-4);
 
     /* Header */
