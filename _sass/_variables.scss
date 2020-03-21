@@ -13,7 +13,7 @@ $breakpoints-6: 96em;
     /* Body */
     @include defineColorVariable(--body-color, neutral, mediumDark);
     @include defineColorVariable(--body-background-color, neutral, lightest);
-    --body-font-size: 1rem;
+    --body-font-size: 1.2rem;
     --body-font-weight: 400;
     --body-line-height: 1.65;
     --body-font-family: "Lato", Helvetica, Arial, sans-serif;
