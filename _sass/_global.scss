@@ -9,6 +9,10 @@ body {
     font-size: var(--body-font-size);
     font-weight: var(--body-font-weight);
     line-height: var(--body-line-height);
+
+    @media (min-width: $breakpoints-5) {
+        font-size: calc(var(--body-font-size) * 1.1);
+    }
 }
 
 a {
