@@ -6,25 +6,29 @@
         justify-content: space-between;
         background-color: var(--header-background-color);
         padding: 1rem var(--layout-wrapper-padding-sm);
-        padding-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     }
 
     .header__logo {
         display: block;
         max-width: 4rem;
-        z-index: 0;
+        flex-shrink: 0;
+        margin-right: 1.25rem;
         .js__dot {
             fill: var(--logo-dot-color);
         }
     }
 
     .header__navigation {
-        z-index: 0;
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         padding: 0 1rem;
+        overflow-x: auto;
         ul {
             display: flex;
+            padding-bottom: 0.5rem;
+            margin-left: -0.5rem;
+            margin-right: -0.5rem;
             li {
                 margin: 0 0.5rem;
             }
@@ -41,7 +45,6 @@
 
     .header__about {
         display: none;
-        z-index: 0;
     }
 
     @media (min-width: $breakpoints-3) {
@@ -50,20 +53,22 @@
             left: 0;
             bottom: 0;
             top: 0;
-            width: 22%;
+            width: 23%;
             flex-direction: column;
             justify-content: flex-start;
             clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
             padding: var(--layout-wrapper-padding-lg)
                 var(--layout-wrapper-padding-sm);
-            padding-right: 3%;
+            padding-right: 4%;
         }
 
         .header__navigation {
             flex-grow: 1;
             margin-top: var(--spacing-6);
+            overflow-x: initial;
             ul {
                 display: initial;
+                margin: 0;
                 li {
                     margin: 0.25rem 0;
                     &:nth-child(1) {
@@ -77,9 +82,10 @@
         }
 
         .header__logo {
-            max-width: 50%;
-            margin-right: auto;
-            margin-left: auto;
+            width: 50%;
+            max-width: 10rem;
+            margin-left: 25%;
+            margin-right: 0;
         }
 
         .header__about {

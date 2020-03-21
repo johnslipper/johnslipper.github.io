@@ -25,7 +25,7 @@
 
     .layout__header {
         position: fixed;
-        top: var(--layout-padding-sm);
+        top: 0;
         left: var(--layout-padding-sm);
         right: var(--layout-padding-sm);
         z-index: 1;
