@@ -62,14 +62,18 @@
         .layout__header {
             position: initial;
             grid-area: sidebar;
+            max-width: var(--layout-header-max-width);
         }
 
         .layout__main {
             grid-area: content;
             padding: var(--layout-wrapper-padding-lg);
+            max-width: 90ch;
+
             &::before {
                 display: none;
             }
+
             &::after {
                 content: "";
                 position: fixed;

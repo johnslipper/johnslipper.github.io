@@ -54,6 +54,7 @@
             bottom: 0;
             top: 0;
             width: 23%;
+            max-width: var(--layout-header-max-width);
             flex-direction: column;
             justify-content: flex-start;
             clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
