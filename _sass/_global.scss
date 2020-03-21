@@ -13,6 +13,10 @@ body {
     @media (min-width: $breakpoints-5) {
         font-size: calc(var(--body-font-size) * 1.1);
     }
+
+    @media (min-width: $breakpoints-7) {
+        font-size: calc(var(--body-font-size) * 1.3);
+    }
 }
 
 a {
