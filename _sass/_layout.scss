@@ -85,4 +85,12 @@
             display: none;
         }
     }
+
+    @media (min-width: $breakpoints-5) {
+        .layout__articles {
+            > article {
+                margin-bottom: var(--spacing-8);
+            }
+        }
+    }
 }
