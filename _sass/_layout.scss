@@ -28,6 +28,7 @@
         top: var(--layout-padding-sm);
         left: var(--layout-padding-sm);
         right: var(--layout-padding-sm);
+        z-index: 1;
     }
 
     .layout__main {
