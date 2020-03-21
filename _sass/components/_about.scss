@@ -6,7 +6,7 @@
     }
 
     .about__photo {
-        width: 4.75rem;
+        width: 7rem;
         img {
             border: 5px solid var(--layout-wrapper-background-color);
         }
@@ -17,6 +17,16 @@
         margin-top: var(--spacing-4);
         p {
             margin-bottom: var(--spacing-2);
+        }
+    }
+
+    .about__social {
+        align-self: flex-end;
+    }
+
+    @media (min-width: $breakpoints-3) {
+        .about__photo {
+            width: 4.75rem;
         }
     }
 }
