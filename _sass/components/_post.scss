@@ -68,4 +68,18 @@
             content: ",";
         }
     }
+
+    .post__actions {
+        margin: var(--spacing-6) 0;
+    }
+
+    .post__link {
+        display: inline-block;
+        text-decoration: none;
+        @include animated-underline();
+    }
+
+    .post__nav {
+        margin: var(--spacing-6) 0;
+    }
 }

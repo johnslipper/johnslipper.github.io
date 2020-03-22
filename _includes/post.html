@@ -45,23 +45,23 @@
 
     <div class="post__actions">
         {% if page.link-website %}
-        <a class="button" href="{{ page.link-website }}" target="_blank"
+        <a class="post__link" href="{{ page.link-website }}" target="_blank"
             >Open website</a
         >
         {% endif %} {% if page.link-demo %}
-        <a class="button" href="{{ page.link-demo }}" target="_blank"
+        <a class="post__link" href="{{ page.link-demo }}" target="_blank"
             >Open demo</a
         >
         {% endif %} {% if page.link-files %}
-        <a class="button" href="{{ page.link-files }}" target="_blank"
+        <a class="post__link" href="{{ page.link-files }}" target="_blank"
             >Download files</a
         >
         {% endif %} {% if page.link-generic %}
-        <a class="button" href="{{ page.link-generic }}" target="_blank"
+        <a class="post__link" href="{{ page.link-generic }}" target="_blank"
             >Open Link</a
         >
         {% endif %} {% if page.link-post %}
-        <a class="button" href="{{ page.link-post }}" target="_blank"
+        <a class="post__link" href="{{ page.link-post }}" target="_blank"
             >View Post</a
         >
         {% endif %}
@@ -76,5 +76,9 @@
             {% endfor %}
         </ul>
     </div>
-    {% endif %} {% include post-nav.html %}
+    {% endif %}
+
+    <div class="post__nav">
+        {% include post-nav.html %}
+    </div>
 </div>
