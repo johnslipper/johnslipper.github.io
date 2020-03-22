@@ -16,8 +16,7 @@
 
     {% if page.update %}
     <div class="post__update"><strong>UPDATE:</strong> {{ page.update }}</div>
-    {% endif %}
-
+    {% endif %} {% if page.hero %}
     <div class="post__hero">
         <img
             class="post__image"
@@ -25,6 +24,7 @@
             alt="{{ page.hero.alt }}"
         />
     </div>
+    {% endif %}
 
     <div class="post__content">
         {{ content }}
