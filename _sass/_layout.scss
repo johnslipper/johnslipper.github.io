@@ -89,6 +89,7 @@
         .layout__main {
             grid-area: content;
             max-width: 90ch;
+            min-height: calc(100vh - (var(--layout-padding-lg) * 2));
 
             &::before {
                 display: none;
