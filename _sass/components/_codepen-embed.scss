@@ -1,0 +1,19 @@
+.codepen-embed {
+    .codepen-embed__editor {
+        display: none;
+    }
+
+    .codepen-embed__link {
+        margin-top: var(--spacer-5);
+    }
+
+    @media (min-width: $breakpoints-3) {
+        .codepen-embed__link {
+            display: none;
+        }
+
+        .codepen-embed__editor {
+            display: block;
+        }
+    }
+}
