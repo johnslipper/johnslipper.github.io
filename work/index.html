@@ -1,0 +1,12 @@
+---
+title: Work > John Slipper - Web Developer
+category: Work
+layout: page
+---
+
+<h1>{{page.category}}</h1>
+
+<div class="layout__articles">
+    {% for post in site.posts %} {% if post.category contains 'work' %} {%
+    include post-preview.html %} {% endif %} {% endfor %}
+</div>

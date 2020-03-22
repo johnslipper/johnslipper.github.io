@@ -1,7 +1,7 @@
 ---
 date: 2014/10/13 18:48:00 +1200
 title: Vnde Website
-category: portfolio
+category: work
 category-title: Portfolio Piece
 tags:
 - CSS3

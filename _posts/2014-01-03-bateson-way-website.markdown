@@ -1,7 +1,7 @@
 ---
 date: 2014/01/03 11:25:45 +1300
 title: Bateson Way Website
-category: portfolio
+category: work
 category-title: Portfolio Piece
 tags:
 - CSS3

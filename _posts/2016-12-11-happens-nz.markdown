@@ -1,7 +1,7 @@
 ---
 date: 2016/12/10 14:45:54 +1200
 title: "Never Happens? Happens Website"
-category: portfolio
+category: work
 category-title: Portfolio Piece
 comments: true
 tags:

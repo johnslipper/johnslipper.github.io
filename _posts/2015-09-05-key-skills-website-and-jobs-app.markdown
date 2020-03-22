@@ -1,7 +1,7 @@
 ---
 date: 2015/09/05 16:52:34 +1200
 title: Key Skills Website & Job App
-category: portfolio
+category: work
 category-title: Portfolio Piece
 tags:
 - AngularJS
@@ -34,7 +34,7 @@ gallery:
 link-website: http://www.keyskills.co.nz
 ---
 
-When Key Skills talked to us at [Capiche Design](http://www.capiche.co.nz) they were not only looking to modernise their website, but also simplify the way they worked as a business on a day-to-day basis. 
+When Key Skills talked to us at [Capiche Design](http://www.capiche.co.nz) they were not only looking to modernise their website, but also simplify the way they worked as a business on a day-to-day basis.
 
 To advertise each new job they needed to first create a listing on [Trade Me](http://www.trademe.co.nz), followed by a duplicate entry in their website CMS. With new jobs appearing daily this was a huge amount of repetition and a great opportunity for improvement.
 

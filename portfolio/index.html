@@ -1,12 +1,5 @@
 ---
 title: Portfolio > John Slipper - Web Developer
-category: Portfolio
-layout: page
+layout: redirect
+redirectTo: "work"
 ---
-
-<h1>{{page.category}}</h1>
-
-<div class="layout__articles">
-    {% for post in site.posts %} {% if post.category contains 'portfolio' %} {%
-    include post-preview.html %} {% endif %} {% endfor %}
-</div>
