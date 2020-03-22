@@ -13,7 +13,7 @@ $breakpoints-8: 124em;
 
 :root {
     /* Body */
-    @include defineColorVariable(--body-color, second, darkest);
+    @include defineColorVariable(--body-color, neutral, dark);
     @include defineColorVariable(--body-background-color, neutral, lightest);
     --body-font-size: 1.2rem;
     --body-font-weight: 400;
@@ -40,7 +40,7 @@ $breakpoints-8: 124em;
     --heading-line-height: 1.15;
     --heading-font-weight: 900;
     @include defineColorVariable(--heading-color, first, mediumDark);
-    @include defineColorVariable(--heading-underline-color, second, dark);
+    @include defineColorVariable(--heading-underline-color, neutral, medium);
 
     /* Spacing */
     --spacing-0: 0rem;
@@ -59,7 +59,7 @@ $breakpoints-8: 124em;
     @include defineColorVariable(--logo-dot-color, first, dark);
 
     /* Articles */
-    @include defineColorVariable(--category-color, second, dark);
+    @include defineColorVariable(--category-color, neutral, mediumDark);
 }
 
 /* Dark theme overrides */
