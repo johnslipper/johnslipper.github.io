@@ -43,29 +43,39 @@
     {% endif %} {% if page.codepen-embed %} {% include codepen-embed.html %} {%
     endif %}
 
-    <div class="post__actions">
+    <ul class="post__actions">
         {% if page.link-website %}
-        <a class="post__link" href="{{ page.link-website }}" target="_blank"
-            >Open website</a
-        >
+        <li>
+            <a class="post__link" href="{{ page.link-website }}" target="_blank"
+                >Open website</a
+            >
+        </li>
         {% endif %} {% if page.link-demo %}
-        <a class="post__link" href="{{ page.link-demo }}" target="_blank"
-            >Open demo</a
-        >
+        <li>
+            <a class="post__link" href="{{ page.link-demo }}" target="_blank"
+                >Open demo</a
+            >
+        </li>
         {% endif %} {% if page.link-files %}
-        <a class="post__link" href="{{ page.link-files }}" target="_blank"
-            >Download files</a
-        >
+        <li>
+            <a class="post__link" href="{{ page.link-files }}" target="_blank"
+                >Download files</a
+            >
+        </li>
         {% endif %} {% if page.link-generic %}
-        <a class="post__link" href="{{ page.link-generic }}" target="_blank"
-            >Open Link</a
-        >
+        <li>
+            <a class="post__link" href="{{ page.link-generic }}" target="_blank"
+                >Open Link</a
+            >
+        </li>
         {% endif %} {% if page.link-post %}
-        <a class="post__link" href="{{ page.link-post }}" target="_blank"
-            >View Post</a
-        >
+        <li>
+            <a class="post__link" href="{{ page.link-post }}" target="_blank"
+                >View Post</a
+            >
+        </li>
         {% endif %}
-    </div>
+    </ul>
 
     {% if page.tags %}
     <div class="post__tags">

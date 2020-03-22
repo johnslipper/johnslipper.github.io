@@ -70,7 +70,12 @@
     }
 
     .post__actions {
-        margin: var(--spacing-6) 0;
+        margin: var(--spacing-6) -1rem;
+        display: flex;
+        li {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
     }
 
     .post__link {
