@@ -66,8 +66,16 @@ $breakpoints-8: 124em;
     @include defineColorVariable(--category-color, first, mediumDark);
 
     /* Theme switcher */
-    @include defineColorVariable(--theme-switcher-active-color, neutral, lightest);
-    @include defineColorVariable(--theme-switcher-active-background-color, first, mediumDark);
+    @include defineColorVariable(
+        --theme-switcher-active-color,
+        neutral,
+        lightest
+    );
+    @include defineColorVariable(
+        --theme-switcher-active-background-color,
+        first,
+        mediumDark
+    );
 }
 
 /* Dark theme overrides */
@@ -88,7 +96,7 @@ $breakpoints-8: 124em;
     @include defineColorVariable(--logo-dot-color, neutral, lightest);
 
     /* Anchor links */
-    @include defineColorVariable(--link-color, neutral, light);
+    @include defineColorVariable(--link-color, neutral, lightest);
 
     /* Headings */
     @include defineColorVariable(--heading-color, neutral, light);
