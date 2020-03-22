@@ -10,14 +10,18 @@
         }
     }
 
+    .post-preview__meta {
+        color: var(--category-color);
+        text-transform: uppercase;
+        font-size: 0.85em;
+    }
+
     .post-preview__category,
     .post-preview__date {
         display: inline;
-        color: var(--category-color);
     }
 
     .post-preview__category {
-        text-transform: uppercase;
         &::after {
             content: "|";
             padding: 0 0.5rem;

@@ -1,20 +1,20 @@
 .post {
     .post__title {
-        margin-bottom: var(--spacing-0);
+        margin-bottom: var(--spacing-2);
     }
 
     .post__meta {
         margin-bottom: var(--spacing-6);
+        color: var(--category-color);
+        text-transform: uppercase;
     }
 
     .post__category,
     .post__date {
         display: inline;
-        color: var(--category-color);
     }
 
     .post__category {
-        text-transform: uppercase;
         &::after {
             content: "|";
             padding: 0 0.5rem;
