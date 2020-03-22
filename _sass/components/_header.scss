@@ -5,7 +5,7 @@
         display: flex;
         justify-content: space-between;
         background-color: var(--header-background-color);
-        padding: 1rem var(--layout-wrapper-padding-sm);
+        padding: 1rem calc(var(--layout-wrapper-padding-sm) / 2);
         padding-bottom: 0.5rem;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     }
@@ -21,7 +21,6 @@
     }
 
     .header__navigation {
-        font-size: 1.1em;
         padding: 0 1rem;
         overflow-x: auto;
         ul {
@@ -45,6 +44,15 @@
 
     .header__about {
         display: none;
+    }
+
+    @media (min-width: $breakpoints-1) {
+        .header__wrapper {
+            padding: 1rem var(--layout-wrapper-padding-sm);
+        }
+        .header__navigation {
+            font-size: 1.1em;
+        }
     }
 
     @media (min-width: $breakpoints-3) {
