@@ -1,0 +1,22 @@
+<nav class="post-nav">
+    <ul>
+        {% if page.previous.url %}
+        <li class="post-nav__item">
+            <a
+                href="{{page.previous.url}}"
+                title="Last post: {{page.previous.title}}"
+            >
+                <div class="post-nav__action">Previous post:</div>
+                <div class="post-nav__title">{{page.previous.title}}</div>
+            </a>
+        </li>
+        {% endif %} {% if page.next.url %}
+        <li class="post-nav__item">
+            <a href="{{page.next.url}}" title="Next up: {{page.next.title}}">
+                <div class="post-nav__action">Next post:</div>
+                <div class="post-nav__title">{{page.next.title}}</div>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>

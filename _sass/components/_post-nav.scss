@@ -1,0 +1,21 @@
+.post-nav {
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .post-nav__item {
+        a {
+            text-decoration: none;
+            @include animated-underline();
+        }
+
+        .post-nav__action {
+            text-transform: uppercase;
+        }
+
+        .post-nav__title {
+            color: var(--category-color);
+            font-size: 0.85em;
+        }
+    }
+}

@@ -1,59 +1,45 @@
-<article class="post post--{{ page.category }}">
-    <h2 class="post__heading">{{ page.title }}</h2>
-    <div class="post__category">
-        <span>{{ page.category-title }}</span>
+<div class="post post--{{ page.category }}">
+    <h1 class="post__title">{{ page.title }}</h1>
+
+    <div class="post__meta">
+        <div class="post__category">
+            <span>{{ page.category-title }}</span>
+        </div>
+
+        <time
+            class="post__date"
+            datetime="{{ page.date }}"
+            title="{{ page.date | date_to_long_string }}"
+            >{{ page.date | date_to_string }}</time
+        >
     </div>
 
-    <time
-        class="post__date"
-        datetime="{{ page.date }}"
-        title="{{ page.date | date_to_long_string }}"
-        >{{ page.date | date_to_string }}</time
-    >
+    {% if page.update %}
+    <div class="post__update"><strong>UPDATE:</strong> {{ page.update }}</div>
+    {% endif %}
 
-    {% if page.hero %} {% if page.hero.type == 'bg' %}
-    <div
-        class="hero bg {{ page.hero.size }}"
-        style="background: {{ page.hero.color }};"
-    >
-        <figure
-            class="inner"
-            style="background-image: url('{{ page.hero.url }}'); background-color: {{ page.hero.color }}; background-size: {{ page.hero.scale }}; background-position: center {{ page.hero.offset }};"
-        ></figure>
+    <div class="post__hero">
+        <img
+            class="post__image"
+            src="{{ page.hero.url }}"
+            alt="{{ page.hero.alt }}"
+        />
     </div>
-    {% else %}
-    <div class="hero {{ page.hero.size }}">
-        <figure class="inner">
-            <img
-                src="{{ page.hero.url }}"
-                alt="{{ page.hero.alt }}"
-                style="margin-top: {{ page.hero.margin-top }};"
-            />
-        </figure>
-    </div>
-    {% endif %} {% endif %}
 
     <div class="post__content">
         {{ content }}
     </div>
 
-    {% if page.update %}
-    <div>
-        <p><strong>UPDATE:</strong> {{ page.update }}</p>
-    </div>
-    {% endif %} {% if page.gallery %}
-    <ul class="small-block-grid-3 clearing-thumbs" data-clearing>
+    {% if page.gallery %}
+    <div class="post__gallery">
         {% for image in page.gallery %}
-        <li>
-            <a href="{{ image.url }}" title="Enlarge Image"
-                ><img
-                    src="{{ image.url }}"
-                    alt="{{ image.caption }}"
-                    data-caption="{{ image.caption }}"
-            /></a>
-        </li>
+        <img
+            class="post__image"
+            src="{{ image.url }}"
+            alt="{{ image.caption }}"
+        />
         {% endfor %}
-    </ul>
+    </div>
     {% endif %} {% if page.codepen-embed %} {% include codepen-embed.html %} {%
     endif %}
 
@@ -90,24 +76,5 @@
             {% endfor %}
         </ul>
     </div>
-    {% endif %}
-    <nav class="post__nav">
-        <ul>
-            {% if page.previous.url %}
-            <li>
-                <a
-                    href="{{page.previous.url}}"
-                    title="Last post: {{page.previous.title}}"
-                    ><span>Prev Post</span></a
-                >
-            </li>
-            {% endif %} {% if page.next.url %}
-            <li>
-                <a href="{{page.next.url}}" title="Next up: {{page.next.title}}"
-                    ><span>Next Post</span></a
-                >
-            </li>
-            {% endif %}
-        </ul>
-    </nav>
-</article>
+    {% endif %} {% include post-nav.html %}
+</div>
