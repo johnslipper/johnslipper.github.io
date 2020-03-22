@@ -8,8 +8,9 @@ const themes = {
     dark: "dark"
 };
 const dataAttribute = "data-theme";
+const checkedAttribute = "aria-checked";
 const toggleSwitch = document.querySelector(
-    '.theme-switch input[type="checkbox"]'
+    '.theme-switcher button'
 );
 const localStorageKey = "theme";
 const currentTheme = localStorage.getItem(localStorageKey);
@@ -18,18 +19,24 @@ if (currentTheme) {
     document.documentElement.setAttribute(dataAttribute, currentTheme);
 
     if (currentTheme === themes.dark) {
-        toggleSwitch.checked = true;
+        setSwitch(true);
     }
 }
 
-function switchTheme(e) {
-    if (e.target.checked) {
+function setSwitch(state) {
+    toggleSwitch.setAttribute(checkedAttribute, state);
+}
+
+function switchTheme() {
+    const wasChecked = (toggleSwitch.getAttribute(checkedAttribute) === 'true');
+    setSwitch(!wasChecked);
+    if (!wasChecked) {
         document.documentElement.setAttribute(dataAttribute, themes.dark);
         localStorage.setItem(localStorageKey, themes.dark);
     } else {
-        document.documentElement.setAttribute(dataAttribute, theme.light);
-        localStorage.setItem(localStorageKey, theme.light);
+        document.documentElement.setAttribute(dataAttribute, themes.light);
+        localStorage.setItem(localStorageKey, themes.light);
     }
 }
 
-toggleSwitch.addEventListener("change", switchTheme, false);
+toggleSwitch.addEventListener("click", switchTheme, false);

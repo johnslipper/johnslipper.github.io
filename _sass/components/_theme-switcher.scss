@@ -1,0 +1,28 @@
+.theme-switcher {
+    margin-top: var(--spacing-4);
+    font-size: 0.9em;
+
+    [role="switch"] {
+        display: inline-flex;
+        width: 6rem;
+        background-color: transparent;
+        border: 1px solid var(--body-color);
+        font-size: 0.85em;
+        color: var(--body-color);
+        margin-left: var(--spacing-3);
+        padding: var(--spacing-0);
+
+        span {
+            display: inline-block;
+            flex: 1 1 50%;
+            line-height: 1;
+            padding: var(--spacing-2);
+        }
+
+        &[aria-checked="true"] :first-child,
+        &[aria-checked="false"] :last-child {
+            background: var(--theme-switcher-active-background-color);
+            color: var(--theme-switcher-active-color);
+        }
+    }
+}

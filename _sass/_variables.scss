@@ -64,6 +64,10 @@ $breakpoints-8: 124em;
 
     /* Articles */
     @include defineColorVariable(--category-color, first, mediumDark);
+
+    /* Theme switcher */
+    @include defineColorVariable(--theme-switcher-active-color, neutral, lightest);
+    @include defineColorVariable(--theme-switcher-active-background-color, first, mediumDark);
 }
 
 /* Dark theme overrides */
