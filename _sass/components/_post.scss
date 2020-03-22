@@ -25,8 +25,17 @@
         margin-bottom: 1.5rem;
     }
 
+    .post__figure {
+        margin-bottom: var(--spacing-5);
+    }
+
     .post__image {
         border: 5px solid var(--body-background-color);
+    }
+
+    .post__caption {
+        font-size: 0.9em;
+        margin-top: var(--spacing-1);
     }
 
     .post__content {
