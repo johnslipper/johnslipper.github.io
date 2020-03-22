@@ -40,7 +40,11 @@ $breakpoints-8: 124em;
     --heading-line-height: 1.15;
     --heading-font-weight: 900;
     @include defineColorVariable(--heading-color, first, mediumDark);
-    @include defineColorVariable(--heading-underline-color, neutral, medium);
+    @include defineColorVariable(
+        --heading-underline-color,
+        neutral,
+        mediumDark
+    );
 
     /* Spacing */
     --spacing-0: 0rem;
@@ -59,7 +63,7 @@ $breakpoints-8: 124em;
     @include defineColorVariable(--logo-dot-color, first, dark);
 
     /* Articles */
-    @include defineColorVariable(--category-color, neutral, mediumDark);
+    @include defineColorVariable(--category-color, first, mediumDark);
 }
 
 /* Dark theme overrides */
