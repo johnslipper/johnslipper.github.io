@@ -9,6 +9,7 @@
         right: 0;
         height: var(--layout-padding-sm);
         background-color: var(--body-background-color);
+        z-index: 1;
     }
 
     &::before {
