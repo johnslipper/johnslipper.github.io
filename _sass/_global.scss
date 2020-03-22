@@ -56,8 +56,8 @@ svg {
         height: $height;
         margin-top: $height;
         background-color: $color;
-        border-radius: $height * 2;
         transition: width 250ms;
+        clip-path: polygon(1% 0, 100% 0, 99% 100%, 0% 100%);
     }
     &:hover,
     &:focus {
