@@ -13,7 +13,7 @@ $breakpoints-8: 124em;
 
 :root {
     /* Body */
-    @include defineColorVariable(--body-color, neutral, mediumDark);
+    @include defineColorVariable(--body-color, second, darkest);
     @include defineColorVariable(--body-background-color, neutral, lightest);
     --body-font-size: 1.2rem;
     --body-font-weight: 400;
