@@ -64,5 +64,28 @@ $breakpoints-8: 124em;
 
 /* Dark theme overrides */
 [data-theme="dark"] {
-    --body-color: #161625;
+    /* Body */
+    @include defineColorVariable(--body-color, neutral, light);
+    @include defineColorVariable(--body-background-color, neutral, darkest);
+
+    /* Layout */
+    @include defineColorVariable(
+        --layout-wrapper-background-color,
+        neutral,
+        dark
+    );
+
+    /* Header */
+    --header-background-color: var(--body-background-color);
+    @include defineColorVariable(--logo-dot-color, neutral, lightest);
+
+    /* Anchor links */
+    @include defineColorVariable(--link-color, neutral, light);
+
+    /* Headings */
+    @include defineColorVariable(--heading-color, neutral, light);
+    @include defineColorVariable(--heading-underline-color, neutral, medium);
+
+    /* Articles */
+    @include defineColorVariable(--category-color, neutral, mediumLight);
 }
