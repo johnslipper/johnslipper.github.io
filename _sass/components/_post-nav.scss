@@ -2,8 +2,11 @@
     ul {
         display: flex;
         justify-content: space-between;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
     }
     .post-nav__item {
+        margin: 0 0.5rem;
         a {
             text-decoration: none;
             @include animated-underline();
