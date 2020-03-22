@@ -11,7 +11,6 @@ tags:
 - HTML
 - JS
 status: publish
-published: true
 thumb: '/img/posts-thumb/happens-nz-thumb.jpg'
 hero: {
 	url: '/img/posts-full/happens-nz-hero.jpg',

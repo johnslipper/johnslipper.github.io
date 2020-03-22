@@ -11,7 +11,6 @@ tags:
 - GSAP
 - Animation
 status: publish
-published: true
 thumb: '/img/posts-thumb/nzbn-thumb.png'
 hero: {
 	size: xlarge,

@@ -7,7 +7,6 @@ tags:
 - Javascript
 - Tutorial
 status: publish
-published: true
 thumb: '/img/posts-thumb/thumb-jquery2.png'
 link-post: 'http://toddmotto.com/is-it-time-to-drop-jquery-essentials-to-learning-javascript-from-a-jquery-background/'
 ---

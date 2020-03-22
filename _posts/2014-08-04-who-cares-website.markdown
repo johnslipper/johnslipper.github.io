@@ -14,7 +14,6 @@ tags:
 - Voting
 - SilverStripe
 status: publish
-published: true
 thumb: '/img/posts-thumb/who-cares.jpg'
 hero: {
 	url: '/img/posts-full/who-cares-hero.jpg',

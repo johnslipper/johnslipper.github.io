@@ -11,7 +11,6 @@ tags:
 - HTML
 - Bootstrap
 status: publish
-published: true
 thumb: '/img/posts-thumb/key-skills-thumb.jpg'
 hero: {
 	url: '/img/posts-full/key-skills-hero.jpg',

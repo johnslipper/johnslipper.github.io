@@ -8,7 +8,6 @@ tags:
 - HTML5
 - Skrollr
 status: publish
-published: true
 thumb: '/img/posts-thumb/skrollr-sticker-peel.png'
 hero: {
 	url: '/img/posts-full/skrollr-sticker-peel.png',

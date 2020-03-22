@@ -11,7 +11,6 @@ tags:
 - Responsive
 - Theme Development
 status: publish
-published: true
 thumb: '/img/posts-thumb/johnslipper-v6-devices.jpg'
 hero: {
 	url: '/img/posts-full/johnslipper-v6-devices.jpg',

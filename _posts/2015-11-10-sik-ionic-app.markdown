@@ -14,7 +14,6 @@ tags:
 - CSS
 - HTML
 status: publish
-published: true
 thumb: '/img/posts-thumb/sik-app-thumb.jpg'
 hero: {
 	url: '/img/posts-full/sik-app-hero.jpg',

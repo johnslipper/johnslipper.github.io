@@ -12,7 +12,6 @@ tags:
 - Google Maps
 - Bootstrap
 status: publish
-published: true
 thumb: '/img/posts-thumb/bateson-way-website.jpg'
 hero: {
 	url: '/img/posts-full/bateson-way-website.jpg',

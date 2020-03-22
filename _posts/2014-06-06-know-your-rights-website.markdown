@@ -8,7 +8,6 @@ tags:
 - HTML5
 - Bootstrap
 status: publish
-published: true
 thumb: '/img/posts-thumb/know-your-rights-website.png'
 hero: {
 	url: '/img/posts-full/know-your-rights-website.png',

@@ -13,7 +13,6 @@ tags:
 - Video
 - SVG
 status: publish
-published: true
 thumb: '/img/posts-thumb/vnde.jpg'
 hero: {
 	url: '/img/posts-full/vnde-hero.jpg',

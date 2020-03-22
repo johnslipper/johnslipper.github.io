@@ -9,7 +9,6 @@ tags:
 - HTML
 - JS
 status: publish
-published: true
 thumb: '/img/posts-thumb/altn8-website-thumb.jpg'
 hero: {
 	url: '/img/posts-full/altn8-website-hero.jpg',

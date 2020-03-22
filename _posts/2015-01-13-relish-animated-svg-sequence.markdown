@@ -10,7 +10,6 @@ tags:
 - VelocityJS
 - Animation
 status: publish
-published: true
 thumb: '/img/posts-thumb/relish-animated-svg-sequence.png'
 hero: {
 	url: '/img/posts-full/relish-animated-svg-sequence.png',
