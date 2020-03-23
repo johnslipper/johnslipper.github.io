@@ -8,6 +8,7 @@
     }
 
     [role="switch"] {
+        position: relative;
         display: inline-flex;
         width: 6rem;
         background-color: transparent;
@@ -24,12 +25,29 @@
             flex: 1 1 50%;
             line-height: 1;
             padding: var(--spacing-2);
+            z-index: 2;
+        }
+
+        &::before {
+            content: "";
+            width: 50%;
+            height: 100%;
+            background-color: var(--theme-switcher-active-background-color);
+            position: absolute;
+            z-index: 1;
+            transition: transform 250ms;
         }
 
         &[aria-checked="true"] :first-child,
         &[aria-checked="false"] :last-child {
-            background: var(--theme-switcher-active-background-color);
             color: var(--theme-switcher-active-color);
+            font-weight: bold;
+        }
+
+        &[aria-checked="false"] {
+            &::before {
+                transform: translateX(100%);
+            }
         }
     }
 }
