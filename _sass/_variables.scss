@@ -13,8 +13,6 @@ $breakpoints-8: 124em;
 
 :root {
     /* Body */
-    @include defineColorVariable(--body-color, neutral, dark);
-    @include defineColorVariable(--body-background-color, neutral, lightest);
     --body-font-size: 1.2rem;
     --body-font-weight: 400;
     --body-line-height: 1.5;
@@ -27,24 +25,10 @@ $breakpoints-8: 124em;
     --layout-wrapper-padding-lg: var(--spacing-6);
     --layout-fixed-header-spacing: 4rem;
     --layout-header-max-width: 23rem;
-    @include defineColorVariable(
-        --layout-wrapper-background-color,
-        neutral,
-        light
-    );
-
-    /* Anchor links */
-    @include defineColorVariable(--link-color, first, mediumDark);
 
     /* Headings */
     --heading-line-height: 1.15;
     --heading-font-weight: 900;
-    @include defineColorVariable(--heading-color, first, mediumDark);
-    @include defineColorVariable(
-        --heading-underline-color,
-        neutral,
-        mediumDark
-    );
 
     /* Spacing */
     --spacing-0: 0rem;
@@ -57,51 +41,13 @@ $breakpoints-8: 124em;
     --spacing-7: 4rem;
     --spacing-8: 6rem;
     --spacing-base: var(--spacing-4);
-
-    /* Header */
-    --header-background-color: var(--body-background-color);
-    @include defineColorVariable(--logo-dot-color, first, dark);
-
-    /* Articles */
-    @include defineColorVariable(--category-color, first, mediumDark);
-
-    /* Theme switcher */
-    @include defineColorVariable(
-        --theme-switcher-active-color,
-        neutral,
-        lightest
-    );
-    @include defineColorVariable(
-        --theme-switcher-active-background-color,
-        first,
-        mediumDark
-    );
 }
 
-/* Dark theme overrides */
+/* Theme colours */
+:root {
+    @import "./variables-light-theme.scss";
+}
+
 [data-theme="dark"] {
-    /* Body */
-    @include defineColorVariable(--body-color, neutral, light);
-    @include defineColorVariable(--body-background-color, neutral, darkest);
-
-    /* Layout */
-    @include defineColorVariable(
-        --layout-wrapper-background-color,
-        neutral,
-        dark
-    );
-
-    /* Header */
-    --header-background-color: var(--body-background-color);
-    @include defineColorVariable(--logo-dot-color, neutral, lightest);
-
-    /* Anchor links */
-    @include defineColorVariable(--link-color, neutral, lightest);
-
-    /* Headings */
-    @include defineColorVariable(--heading-color, neutral, light);
-    @include defineColorVariable(--heading-underline-color, neutral, medium);
-
-    /* Articles */
-    @include defineColorVariable(--category-color, neutral, mediumLight);
+    @import "./variables-dark-theme.scss";
 }

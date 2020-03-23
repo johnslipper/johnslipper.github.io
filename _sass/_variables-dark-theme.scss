@@ -1,0 +1,28 @@
+/* Body */
+@include defineColorVariable(--body-color, neutral, light);
+@include defineColorVariable(--body-background-color, neutral, darkest);
+
+/* Layout */
+@include defineColorVariable(--layout-wrapper-background-color, neutral, dark);
+
+/* Header */
+@include defineColorVariable(--header-background-color, neutral, darkest);
+@include defineColorVariable(--logo-dot-color, neutral, lightest);
+
+/* Anchor links */
+@include defineColorVariable(--link-color, neutral, lightest);
+
+/* Headings */
+@include defineColorVariable(--heading-color, neutral, light);
+@include defineColorVariable(--heading-underline-color, neutral, medium);
+
+/* Articles */
+@include defineColorVariable(--category-color, neutral, mediumLight);
+
+/* Theme switcher */
+@include defineColorVariable(--theme-switcher-active-color, neutral, lightest);
+@include defineColorVariable(
+    --theme-switcher-active-background-color,
+    first,
+    mediumDark
+);
