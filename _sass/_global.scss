@@ -41,6 +41,15 @@ svg {
     border: 0 !important;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
 @mixin animated-underline(
     $widthStart: 15%,
     $widthEnd: 100%,
