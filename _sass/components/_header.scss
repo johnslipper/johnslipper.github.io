@@ -46,15 +46,6 @@
         display: none;
     }
 
-    @media (min-width: $breakpoints-1) {
-        .header__wrapper {
-            padding: 1rem var(--layout-wrapper-padding-sm);
-        }
-        .header__navigation {
-            font-size: 1.1em;
-        }
-    }
-
     @media (min-width: $breakpoints-3) {
         .header__wrapper {
             position: fixed;
