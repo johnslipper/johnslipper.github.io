@@ -17,27 +17,30 @@
         position: relative;
         z-index: 1;
     }
+
+    .theme-switcher {
+        margin-top: var(--spacing-4);
+    }
+
     @media (min-width: $breakpoints-3) {
         position: fixed;
         bottom: 0;
         right: 0;
-        width: 17%;
-        height: 18%;
+        padding: 1.5rem 1.5rem 1.5rem 2rem;
         background-color: var(--header-background-color);
-        clip-path: polygon(100% 100%, 100% 0px, 0% 100%);
-        display: flex;
-        align-items: flex-end;
+        clip-path: polygon(10% 10%, 100% 0%, 100% 100%, 0% 100%);
+
+        &::before {
+            display: none;
+        }
+
         .theme-switcher {
             text-align: center;
-            margin-left: auto;
+            margin-top: 0;
             font-size: 0.8em;
         }
         .about {
             display: none;
         }
-    }
-
-    @media (min-width: $breakpoints-5) {
-        padding: var(--layout-wrapper-padding-sm);
     }
 }
