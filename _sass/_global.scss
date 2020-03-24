@@ -41,6 +41,10 @@ svg {
     border: 0 !important;
 }
 
+[hidden] {
+    display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

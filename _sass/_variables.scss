@@ -51,3 +51,12 @@ $breakpoints-8: 124em;
 [data-theme="dark"] {
     @import "./variables-dark-theme.scss";
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @import "./variables-dark-theme.scss";
+    }
+    [data-theme="light"] {
+        @import "./variables-light-theme.scss";
+    }
+}
