@@ -1,22 +1,29 @@
 <div class="comments">
-  <div class="row">
-    <div class="column">
-      <div id="disqus_thread"></div>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <div class="row">
+        <div class="column">
+            <div id="disqus_thread"></div>
+            <noscript
+                >Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript" rel="noreferrer"
+                    >comments powered by Disqus.</a
+                ></noscript
+            >
+        </div>
     </div>
-  </div>
 </div>
 <script>
-    var disqus_config = function () {
+    var disqus_config = function() {
         // var disqus_developer = 1; // Comment out when the site is live
         this.page.identifier = "{{ page.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
+    (function() {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement("script");
 
-        s.src = '//johnslipper.disqus.com/embed.js';
+        s.src = "//johnslipper.disqus.com/embed.js";
 
-        s.setAttribute('data-timestamp', +new Date());
+        s.setAttribute("data-timestamp", +new Date());
         (d.head || d.body).appendChild(s);
     })();
 </script>

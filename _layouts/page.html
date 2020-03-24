@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% include ascii.html %}
+<html lang="en">
+    <head>
+        {% include head.html %}
+    </head>
+    <body class="layout layout--page">
+        {% include skip-to-content-link.html %}
+        <div class="layout__wrapper">
+            <header class="layout__header">
+                {% include header.html %}
+            </header>
+            <main id="main" class="layout__main">
+                {{content}}
+            </main>
+            <footer class="layout__footer">
+                {% include footer.html %}
+            </footer>
+        </div>
+    </body>
+</html>

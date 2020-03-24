@@ -1,31 +1,21 @@
-{% include html.html %}
-  <head>
-    {% include head.html %}
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
-    {% include analytics.html %}
-  </head>
-  <body>
-    <div class="off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap">
-        <header>
-          {% include header.html %}
-        </header>
-        {% include off-canvas-menu.html %}
-        <!-- <div id="ajax"> -->
-          {% include post.html %}
-        <!-- </div> -->
-        {% if page.comments %}
-        {% include disqus.html %}
-        {% endif %}
-        <!-- close the off-canvas menu -->
-        <a class="exit-off-canvas"></a>
-        <footer>
-          {% include footer.html %}
-        </footer>
-      </div>
-    </div>
-    {% include scripts.html %}
-  </body>
+<!DOCTYPE html>
+{% include ascii.html %}
+<html lang="en">
+    <head>
+        {% include head.html %}
+    </head>
+    <body class="layout layout--post">
+        {% include skip-to-content-link.html %}
+        <div class="layout__wrapper">
+            <header class="layout__header">
+                {% include header.html %}
+            </header>
+            <main id="main" class="layout__main">
+                {% include post.html %}
+            </main>
+            <footer class="layout__footer">
+                {% include footer.html %}
+            </footer>
+        </div>
+    </body>
 </html>

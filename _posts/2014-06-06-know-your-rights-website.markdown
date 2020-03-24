@@ -1,15 +1,13 @@
 ---
 date: 2014/06/06 16:15:47 +1300
-layout: post
 title: Know Your Rights Website
-category: portfolio
+category: work
 category-title: Portfolio Piece
 tags:
 - CSS3
 - HTML5
 - Bootstrap
 status: publish
-published: true
 thumb: '/img/posts-thumb/know-your-rights-website.png'
 hero: {
 	url: '/img/posts-full/know-your-rights-website.png',

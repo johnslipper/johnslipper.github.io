@@ -1,0 +1,36 @@
+.about {
+    .about__wrapper {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        grid-gap: var(--spacing-5);
+    }
+
+    .about__photo {
+        width: 7rem;
+        img {
+            border: 5px solid var(--layout-wrapper-background-color);
+        }
+    }
+
+    .about__description {
+        font-size: 0.85em;
+        margin-top: var(--spacing-4);
+        p {
+            margin-bottom: var(--spacing-2);
+        }
+    }
+
+    .about__social {
+        align-self: flex-end;
+    }
+
+    @media (min-width: $breakpoints-3) {
+        .about__photo {
+            width: 4.8rem;
+        }
+
+        .about__social {
+            align-self: initial;
+        }
+    }
+}

@@ -1,8 +1,7 @@
 ---
 date: 2014/01/03 11:25:45 +1300
-layout: post
 title: Bateson Way Website
-category: portfolio
+category: work
 category-title: Portfolio Piece
 tags:
 - CSS3
@@ -13,7 +12,6 @@ tags:
 - Google Maps
 - Bootstrap
 status: publish
-published: true
 thumb: '/img/posts-thumb/bateson-way-website.jpg'
 hero: {
 	url: '/img/posts-full/bateson-way-website.jpg',

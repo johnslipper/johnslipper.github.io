@@ -1,0 +1,62 @@
+@import "./palettes";
+
+/** Breakpoints
+ * (CSS variables currently unavailable in @media) */
+$breakpoints-1: 40em;
+$breakpoints-2: 52em;
+$breakpoints-3: 64em;
+$breakpoints-4: 76em;
+$breakpoints-5: 88em;
+$breakpoints-6: 100em;
+$breakpoints-7: 112em;
+$breakpoints-8: 124em;
+
+:root {
+    /* Body */
+    --body-font-size: 1.2rem;
+    --body-font-weight: 400;
+    --body-line-height: 1.5;
+    --body-font-family: "Lato", Helvetica, Arial, sans-serif;
+
+    /* Layout */
+    --layout-padding-sm: var(--spacing-2);
+    --layout-padding-lg: var(--spacing-4);
+    --layout-wrapper-padding-sm: var(--spacing-5);
+    --layout-wrapper-padding-lg: var(--spacing-6);
+    --layout-fixed-header-spacing: 4rem;
+    --layout-header-max-width: 23rem;
+
+    /* Headings */
+    --heading-line-height: 1.15;
+    --heading-font-weight: 900;
+
+    /* Spacing */
+    --spacing-0: 0rem;
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.5rem;
+    --spacing-6: 2rem;
+    --spacing-7: 4rem;
+    --spacing-8: 6rem;
+    --spacing-base: var(--spacing-4);
+}
+
+/* Theme colours */
+:root {
+    @import "./variables-light-theme.scss";
+}
+
+[data-theme="dark"] {
+    @import "./variables-dark-theme.scss";
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @import "./variables-dark-theme.scss";
+    }
+    [data-theme="light"] {
+        @import "./variables-light-theme.scss";
+    }
+}

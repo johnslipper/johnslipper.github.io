@@ -1,0 +1,113 @@
+.layout {
+    padding: var(--layout-padding-sm);
+
+    &::before,
+    &::after {
+        content: "";
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: var(--layout-padding-sm);
+        background-color: var(--body-background-color);
+        z-index: 1;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    .layout__content-skip {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        height: 1px;
+        width: 1px;
+        text-align: left;
+        overflow: hidden;
+        z-index: 2;
+
+        &:active,
+        &:focus,
+        &:hover {
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            padding: var(--spacing-4);
+            margin: var(--spacing-4);
+            background-color: var(--layout-wrapper-background-color);
+            border: 5px solid var(--link-color);
+        }
+    }
+
+    .layout__wrapper {
+        background-color: var(--layout-wrapper-background-color);
+    }
+
+    .layout__header {
+        position: fixed;
+        top: 0;
+        left: var(--layout-padding-sm);
+        right: var(--layout-padding-sm);
+        z-index: 1;
+    }
+
+    .layout__main {
+        padding: var(--layout-wrapper-padding-sm);
+        &::before {
+            content: "";
+            display: block;
+            padding-top: var(--layout-fixed-header-spacing);
+        }
+    }
+
+    .layout__articles {
+        margin-top: var(--spacing-6);
+        > article {
+            margin-bottom: var(--spacing-7);
+        }
+    }
+
+    @media (min-width: $breakpoints-3) {
+        padding: var(--layout-padding-lg);
+
+        &::before,
+        &::after {
+            height: var(--layout-padding-lg);
+        }
+
+        .layout__wrapper {
+            display: grid;
+            grid-template: "sidebar content ..." / 2fr 4fr 1fr;
+        }
+
+        .layout__header {
+            position: initial;
+            grid-area: sidebar;
+            max-width: var(--layout-header-max-width);
+        }
+
+        .layout__main {
+            grid-area: content;
+            max-width: 90ch;
+            min-height: calc(100vh - (var(--layout-padding-lg) * 2));
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoints-5) {
+        .layout__articles {
+            > article {
+                margin-bottom: var(--spacing-8);
+            }
+        }
+    }
+}

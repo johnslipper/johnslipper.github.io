@@ -1,6 +1,5 @@
 ---
 date: 2014/05/15 14:08:00 +1300
-layout: post
 title: To the Drawing Board ...Again!
 category: posts
 category-title: Website Refresh!
@@ -12,7 +11,6 @@ tags:
 - Responsive
 - Theme Development
 status: publish
-published: true
 thumb: '/img/posts-thumb/johnslipper-v6-devices.jpg'
 hero: {
 	url: '/img/posts-full/johnslipper-v6-devices.jpg',
@@ -26,7 +24,7 @@ hero: {
 
 A more elegant design and simplified site layout from the ground up on a dynamically generated static platform. Confused?
 
-It doesn't seem that long ago I was writing about my [brand new responsive Wordpress site](/welcome-to-wordpress/ "Last website update"). To tell the truth I was never happy with the design, it felt a little cramped and unfinished. I had been concentrating more on learning Wordpress template development and the [Compass](http://compass-style.org/ "Compass style framework website") framework rather than on getting the actual design fundimentals correct.
+It doesn't seem that long ago I was writing about my [brand new responsive Wordpress site](/welcome-to-wordpress/ "Last website update"). To tell the truth I was never happy with the design, it felt a little cramped and unfinished. I had been concentrating more on learning Wordpress template development and the [Compass](http://compass-style.org/ "Compass style framework website") framework rather than on getting the actual design fundamentals correct.
 
 My idea was that I would utilise every piece of screen real estate available to maximise the content available to the viewer. What of course I was failing to realise is that this is a simple portfolio/blog site, rather than a complex, jam-packed international news site. There is actually only a small amount content I need to get across, so why not try and achieve that as simply and elegantly as possible?
 

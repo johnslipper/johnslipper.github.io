@@ -1,8 +1,7 @@
 ---
 date: 2016/12/10 14:45:54 +1200
-layout: post
 title: "Never Happens? Happens Website"
-category: portfolio
+category: work
 category-title: Portfolio Piece
 comments: true
 tags:
@@ -12,7 +11,6 @@ tags:
 - HTML
 - JS
 status: publish
-published: true
 thumb: '/img/posts-thumb/happens-nz-thumb.jpg'
 hero: {
 	url: '/img/posts-full/happens-nz-hero.jpg',

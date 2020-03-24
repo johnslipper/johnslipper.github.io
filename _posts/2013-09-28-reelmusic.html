@@ -1,6 +1,5 @@
 ---
 date: 2013/09/28 21:09:48 +1200
-layout: post
 title: ReelMusic JavaScript MP3 Player
 category: demos
 category-title: Demo Project
@@ -14,8 +13,6 @@ tags:
 - MooTools
 - MP3
 status: publish
-type: post
-published: true
 thumb: '/img/posts-full/reelmusic.jpg'
 hero: {
 	url: '/img/posts-full/reelmusic.jpg',
@@ -24,12 +21,54 @@ hero: {
 }
 link-demo: 'http://www.johnslipper.com/reelmusic-audio-player/'
 ---
-<p>2012 - after viewing a great promo site for "Simple Song" by The Shins I decided I wanted to try the same, but with one key difference - No Flash.</p>
 
-<p>Yes the site is primarily HTML and CSS but the core audio mechanism is based in Flash (for the real-time audio processing I'm guessing). I wanted to find out if it was possible to use HTML5 audio in place of Flash while still retaining the core functionality.</p>
+<p>
+    2012 - after viewing a great promo site for "Simple Song" by The Shins I
+    decided I wanted to try the same, but with one key difference - No Flash.
+</p>
 
-<p>After some initial tests I realised an audio framework would come in extremely handy, and was pleased to find that <a title="Jay Savat website" href="http://jaysalvat.com/">Jay Salvat</a> had already been busy at work creating the <a title="Buzz JavaScript audio framework" href="http://buzz.jaysalvat.com/">Buzz</a> JavaScript audio framework. I combined this in a <a title="MooTools JavaScript Framework" href="http://mootools.net/">MooTools</a> class and sub-class structure with public methods that could be called via mouse events. The 'tapes' are objects that as well as containing links to the audio, also contain the song metadata to be displayed on the front of the machine while a tape is loaded.</p>
+<p>
+    Yes the site is primarily HTML and CSS but the core audio mechanism is based
+    in Flash (for the real-time audio processing I'm guessing). I wanted to find
+    out if it was possible to use HTML5 audio in place of Flash while still
+    retaining the core functionality.
+</p>
 
-<p>The next step was to make the reel to reel machine actually work. The trickiest part of this was the illusion that tape is moving between the two reels, especially working out how the tape angle changes with the amount left on the reel as the song progresses.</p>
+<p>
+    After some initial tests I realised an audio framework would come in
+    extremely handy, and was pleased to find that
+    <a title="Jay Savat website" href="http://jaysalvat.com/" rel="noreferrer"
+        >Jay Salvat</a
+    >
+    had already been busy at work creating the
+    <a
+        title="Buzz JavaScript audio framework"
+        href="http://buzz.jaysalvat.com/"
+        rel="noreferrer"
+        >Buzz</a
+    >
+    JavaScript audio framework. I combined this in a
+    <a
+        title="MooTools JavaScript Framework"
+        href="http://mootools.net/"
+        rel="noreferrer"
+        >MooTools</a
+    >
+    class and sub-class structure with public methods that could be called via
+    mouse events. The 'tapes' are objects that as well as containing links to
+    the audio, also contain the song metadata to be displayed on the front of
+    the machine while a tape is loaded.
+</p>
 
-<p>The end result is hopefully a fun new take on some old skool' technology. Best viewed in webkit browsers but others supported (not tested in Internet Explorer but I suspect probably 10+ to be in with a chance).</p>
+<p>
+    The next step was to make the reel to reel machine actually work. The
+    trickiest part of this was the illusion that tape is moving between the two
+    reels, especially working out how the tape angle changes with the amount
+    left on the reel as the song progresses.
+</p>
+
+<p>
+    The end result is hopefully a fun new take on some old skool' technology.
+    Best viewed in webkit browsers but others supported (not tested in Internet
+    Explorer but I suspect probably 10+ to be in with a chance).
+</p>

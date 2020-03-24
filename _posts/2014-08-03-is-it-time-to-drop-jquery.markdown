@@ -1,6 +1,5 @@
 ---
 date: 2014/08/03 17:41:59 +1300
-layout: post
 title: "Is it time to drop JQuery?"
 category: posts
 category-title: Readings
@@ -8,7 +7,6 @@ tags:
 - Javascript
 - Tutorial
 status: publish
-published: true
 thumb: '/img/posts-thumb/thumb-jquery2.png'
 link-post: 'http://toddmotto.com/is-it-time-to-drop-jquery-essentials-to-learning-javascript-from-a-jquery-background/'
 ---

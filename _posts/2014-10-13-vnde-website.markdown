@@ -1,8 +1,7 @@
 ---
 date: 2014/10/13 18:48:00 +1200
-layout: post
 title: Vnde Website
-category: portfolio
+category: work
 category-title: Portfolio Piece
 tags:
 - CSS3
@@ -14,7 +13,6 @@ tags:
 - Video
 - SVG
 status: publish
-published: true
 thumb: '/img/posts-thumb/vnde.jpg'
 hero: {
 	url: '/img/posts-full/vnde-hero.jpg',
@@ -36,4 +34,4 @@ update: 'VNDE has now re-branded to Arahi and changing the website.'
 
 Introducing Vnde - a non-alcoholic beverage made from premium New Zealand fruit.
 
-[vnde.co.nz](http://www.vnde.nz/ "Visit Vnde website") is a distintive drink designed to fit into any social gathering. It is a great fit for people looking for a sophisticated drink without having to drink alcohol. The website includes scalable vector graphics and HTML5 video to convey the premium nature of the drink. Design and brand development by [Capiche Design](http://www.capiche.co.nz "Visit Capiche website").
+[vnde.co.nz](http://www.vnde.nz/ "Visit Vnde website") is a distinctive drink designed to fit into any social gathering. It is a great fit for people looking for a sophisticated drink without having to drink alcohol. The website includes scalable vector graphics and HTML5 video to convey the premium nature of the drink. Design and brand development by [Capiche Design](http://www.capiche.co.nz "Visit Capiche website").

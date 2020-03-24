@@ -1,0 +1,53 @@
+.post-preview {
+    .post-preview__heading {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        font-size: 2rem;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            @include animated-underline();
+        }
+    }
+
+    .post-preview__meta {
+        color: var(--category-color);
+        text-transform: uppercase;
+        font-size: 0.85em;
+    }
+
+    .post-preview__category,
+    .post-preview__date {
+        display: inline;
+    }
+
+    .post-preview__category {
+        &::after {
+            content: "|";
+            padding: 0 0.5rem;
+        }
+    }
+
+    .post-preview__excerpt {
+        margin-top: 0.5rem;
+    }
+
+    .post-preview_thumbnail {
+        border: 5px solid var(--body-background-color);
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (min-width: $breakpoints-5) {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1rem;
+
+        .post-preview__excerpt {
+            margin-bottom: 0;
+        }
+    }
+}

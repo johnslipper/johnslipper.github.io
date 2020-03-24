@@ -1,6 +1,5 @@
 ---
 date: 2015/11/10 20:59:12 +1200
-layout: post
 title: Songs I Know Ionic App
 category: demos
 category-title: Personal Project
@@ -15,7 +14,6 @@ tags:
 - CSS
 - HTML
 status: publish
-published: true
 thumb: '/img/posts-thumb/sik-app-thumb.jpg'
 hero: {
 	url: '/img/posts-full/sik-app-hero.jpg',
