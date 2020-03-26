@@ -44,6 +44,13 @@
             font-weight: bold;
             color: var(--category-color);
         }
+        ul {
+            list-style: initial;
+            margin-left: 1rem;
+            li {
+                margin-bottom: 0.5rem;
+            }
+        }
     }
 
     .post__gallery {
