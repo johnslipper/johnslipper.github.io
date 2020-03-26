@@ -23,6 +23,14 @@
             src="{{ page.hero.url }}"
             alt="{{ page.hero.alt }}"
         />
+        {% if page.hero.credit %}
+        <p class="post__caption">
+            Photo by
+            <a href="{{page.hero.credit.url}}" target="_blank" rel="noreferrer"
+                >{{page.hero.credit.name}}</a
+            >
+        </p>
+        {% endif %}
     </div>
     {% endif %}
 
