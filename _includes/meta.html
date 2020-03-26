@@ -1,0 +1,37 @@
+<title>{{ page.title }}</title>
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="{{page.title}}" />
+{% if page.excerpt %}
+<meta property="description" content="{{page.excerpt | strip_html}}" />
+{% else %}
+<meta property="description" content="{{site.description | strip_html}}" />
+{% endif %}
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{site.url}}" />
+<meta property="og:title" content="{{page.title}}" />
+{% if page.excerpt %}
+<meta property="og:description" content="{{page.excerpt | strip_html}}" />
+{% else %}
+<meta property="og:description" content="{{site.description | strip_html}}" />
+{% endif %} {% if page.hero %}
+<meta property="og:image" content="{{page.hero.url}}" />
+{% endif %}
+
+<!-- Twitter -->
+<meta name="twitter:site" content="@johnslipper" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="{{site.url}}" />
+<meta property="twitter:title" content="{{page.title}}" />
+{% if page.excerpt %}
+<meta property="twitter:description" content="{{page.excerpt | strip_html}}" />
+{% else %}
+<meta
+    property="twitter:description"
+    content="{{site.description | strip_html}}"
+/>
+{% endif %} {% if page.hero %}
+<meta property="twitter:image" content="{{page.hero.url}}" />
+{% endif %}
