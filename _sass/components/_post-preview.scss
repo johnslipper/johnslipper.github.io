@@ -33,6 +33,7 @@
     }
 
     .post-preview_thumbnail {
+        display: block;
         border: 5px solid var(--body-background-color);
         img {
             object-fit: cover;
