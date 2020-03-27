@@ -20,7 +20,12 @@
 
         <p class="post-preview__excerpt">{{ post.excerpt | strip_html }}</p>
     </div>
-    <a href="{{ post.url }}" class="post-preview_thumbnail" aria-hidden="true">
+    <a
+        href="{{ post.url }}"
+        class="post-preview_thumbnail"
+        aria-hidden="true"
+        tabindex="-1"
+    >
         <img src="{{ post.thumb }}" alt="" />
     </a>
 </article>
