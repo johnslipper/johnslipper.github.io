@@ -49,8 +49,8 @@ svg {
     *,
     *::before,
     *::after {
-        animation: none !important;
-        transition: none !important;
+        animation-duration: 0.001s !important;
+        transition-duration: 0.001s !important;
     }
 }
 
