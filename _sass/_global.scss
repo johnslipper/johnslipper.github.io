@@ -45,6 +45,25 @@ svg {
     display: none;
 }
 
+button,
+a[href] {
+    &:focus {
+        outline: 1px solid var(--outline-color);
+    }
+
+    &:-moz-focusring {
+        outline: 5px solid var(--outline-color);
+    }
+
+    &:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    &:focus-visible {
+        outline: 5px solid var(--outline-color);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -61,7 +80,6 @@ svg {
     $height: 0.25rem
 ) {
     position: relative;
-    outline-color: $color;
     &::after {
         content: "";
         display: block;
