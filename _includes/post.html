@@ -27,7 +27,7 @@
         {% if page.hero.credit %}
         <p class="post__caption">
             Photo by
-            <a href="{{page.hero.credit.url}}" target="_blank" rel="noreferrer"
+            <a href="{{page.hero.credit.url}}" rel="noreferrer"
                 >{{page.hero.credit.name}}</a
             >
         </p>
@@ -58,28 +58,19 @@
             <a
                 class="post__link"
                 href="{{ page.link-website }}"
-                target="_blank"
                 rel="noreferrer"
                 >Open website</a
             >
         </li>
         {% endif %} {% if page.link-demo %}
         <li>
-            <a
-                class="post__link"
-                href="{{ page.link-demo }}"
-                target="_blank"
-                rel="noreferrer"
+            <a class="post__link" href="{{ page.link-demo }}" rel="noreferrer"
                 >Open demo</a
             >
         </li>
         {% endif %} {% if page.link-files %}
         <li>
-            <a
-                class="post__link"
-                href="{{ page.link-files }}"
-                target="_blank"
-                rel="noreferrer"
+            <a class="post__link" href="{{ page.link-files }}" rel="noreferrer"
                 >Download files</a
             >
         </li>
@@ -88,18 +79,13 @@
             <a
                 class="post__link"
                 href="{{ page.link-generic }}"
-                target="_blank"
                 rel="noreferrer"
                 >Open Link</a
             >
         </li>
         {% endif %} {% if page.link-post %}
         <li>
-            <a
-                class="post__link"
-                href="{{ page.link-post }}"
-                target="_blank"
-                rel="noreferrer"
+            <a class="post__link" href="{{ page.link-post }}" rel="noreferrer"
                 >View Post</a
             >
         </li>
