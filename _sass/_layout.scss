@@ -68,9 +68,8 @@
 
     .layout__articles {
         margin-top: 2rem;
-        > article {
-            margin-bottom: 4rem;
-        }
+        display: grid;
+        grid-gap: 4rem;
     }
 
     @media (min-width: $breakpoints-3) {
@@ -105,9 +104,7 @@
 
     @media (min-width: $breakpoints-5) {
         .layout__articles {
-            > article {
-                margin-bottom: 6rem;
-            }
+            grid-gap: 6rem;
         }
     }
 }
