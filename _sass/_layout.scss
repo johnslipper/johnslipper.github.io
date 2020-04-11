@@ -5,25 +5,25 @@
     &::after {
         content: "";
         position: fixed;
-        left: 0;
-        right: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         height: var(--layout-padding-sm);
         background-color: var(--body-background-color);
         z-index: 1;
     }
 
     &::before {
-        top: 0;
+        inset-block-start: 0;
     }
 
     &::after {
-        bottom: 0;
+        inset-block-end: 0;
     }
 
     .layout__content-skip {
         position: absolute;
-        top: -1000px;
-        left: -1000px;
+        inset-block-start: -1000px;
+        inset-inline-start: -1000px;
         height: 1px;
         width: 1px;
         text-align: left;
@@ -33,8 +33,8 @@
         &:active,
         &:focus,
         &:hover {
-            left: 0;
-            top: 0;
+            inset-inline-start: 0;
+            inset-block-start: 0;
             width: auto;
             height: auto;
             overflow: visible;
@@ -51,9 +51,9 @@
 
     .layout__header {
         position: fixed;
-        top: 0;
-        left: var(--layout-padding-sm);
-        right: var(--layout-padding-sm);
+        inset-block-start: 0;
+        inset-inline-start: var(--layout-padding-sm);
+        inset-inline-end: var(--layout-padding-sm);
         z-index: 1;
     }
 
@@ -62,12 +62,12 @@
         &::before {
             content: "";
             display: block;
-            padding-top: var(--layout-fixed-header-spacing);
+            padding-block-start: var(--layout-fixed-header-spacing);
         }
     }
 
     .layout__articles {
-        margin-top: 2rem;
+        margin-block-start: 2rem;
         display: grid;
         grid-gap: 4rem;
     }

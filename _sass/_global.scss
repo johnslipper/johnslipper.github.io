@@ -85,7 +85,7 @@ a[href] {
         display: block;
         width: $widthStart;
         height: $height;
-        margin-top: $height;
+        margin-block-start: $height;
         background-color: $color;
         transition: width 250ms;
         clip-path: polygon(1% 0, 100% 0, 99% 100%, 0% 100%);

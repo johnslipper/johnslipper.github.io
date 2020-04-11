@@ -17,6 +17,7 @@ tags:
     - Flexbox
     - CSS grid
     - CSS variables
+    - CSS logical properties
     - Dark theme
     - Clip path
     - A11y

@@ -1,7 +1,7 @@
 .post-preview {
     .post-preview__heading {
-        margin-top: 0;
-        margin-bottom: 0.75rem;
+        margin-block-start: 0;
+        margin-block-end: 0.75rem;
         font-size: 2rem;
         a {
             display: inline-block;
@@ -29,7 +29,7 @@
     }
 
     .post-preview__excerpt {
-        margin-top: 0.5rem;
+        margin-block-start: 0.5rem;
     }
 
     .post-preview_thumbnail {
@@ -48,7 +48,7 @@
         grid-gap: 1rem;
 
         .post-preview__excerpt {
-            margin-bottom: 0;
+            margin-block-end: 0;
         }
     }
 }

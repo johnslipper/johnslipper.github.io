@@ -1,10 +1,10 @@
 .post {
     .post__title {
-        margin-bottom: 0.5rem;
+        margin-block-end: 0.5rem;
     }
 
     .post__meta {
-        margin-bottom: 2rem;
+        margin-block-end: 2rem;
         color: var(--category-color);
         text-transform: uppercase;
     }
@@ -22,11 +22,11 @@
     }
 
     .post__hero {
-        margin-bottom: 1.5rem;
+        margin-block-end: 1.5rem;
     }
 
     .post__figure {
-        margin-bottom: 1.5rem;
+        margin-block-end: 1.5rem;
     }
 
     .post__image {
@@ -35,7 +35,7 @@
 
     .post__caption {
         font-size: 0.9em;
-        margin-top: 0.25rem;
+        margin-block-start: 0.25rem;
     }
 
     .post__content {
@@ -46,16 +46,16 @@
         }
         ul {
             list-style: initial;
-            margin-left: 1rem;
+            margin-inline-start: 1rem;
             li {
-                margin-bottom: 0.5rem;
+                margin-block-end: 0.5rem;
             }
         }
     }
 
     .post__gallery {
         .post__image {
-            margin-bottom: 2rem;
+            margin-block-end: 2rem;
         }
     }
 
@@ -63,7 +63,7 @@
     .post__tags {
         display: inline-block;
         padding: 1rem 2rem;
-        margin-bottom: 2rem;
+        margin-block-end: 2rem;
         background-color: var(--body-background-color);
         clip-path: polygon(1% 0, 100% 0, 99% 100%, 0% 100%);
         font-size: 0.9em;
@@ -78,7 +78,7 @@
 
         span {
             color: var(--heading-color);
-            margin-right: 0.5rem;
+            margin-inline-end: 0.5rem;
         }
 
         li:not(:last-of-type):after {
@@ -90,8 +90,8 @@
         margin: 2rem -1rem;
         display: flex;
         li {
-            margin-left: 1rem;
-            margin-right: 1rem;
+            margin-inline-start: 1rem;
+            margin-inline-end: 1rem;
         }
     }
 
