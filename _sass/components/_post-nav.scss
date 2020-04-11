@@ -8,6 +8,7 @@
     .post-nav__item {
         margin: 0 0.5rem;
         a {
+            display: block;
             text-decoration: none;
             @include animated-underline();
         }
