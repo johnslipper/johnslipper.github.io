@@ -19,28 +19,16 @@ $breakpoints-8: 124em;
     --body-font-family: "Lato", Helvetica, Arial, sans-serif;
 
     /* Layout */
-    --layout-padding-sm: var(--spacing-2);
-    --layout-padding-lg: var(--spacing-4);
-    --layout-wrapper-padding-sm: var(--spacing-5);
-    --layout-wrapper-padding-lg: var(--spacing-6);
+    --layout-padding-sm: 0.5rem;
+    --layout-padding-lg: 1rem;
+    --layout-wrapper-padding-sm: 1.5rem;
+    --layout-wrapper-padding-lg: 2rem;
     --layout-fixed-header-spacing: 4rem;
     --layout-header-max-width: 23rem;
 
     /* Headings */
     --heading-line-height: 1.15;
     --heading-font-weight: 900;
-
-    /* Spacing */
-    --spacing-0: 0rem;
-    --spacing-1: 0.25rem;
-    --spacing-2: 0.5rem;
-    --spacing-3: 0.75rem;
-    --spacing-4: 1rem;
-    --spacing-5: 1.5rem;
-    --spacing-6: 2rem;
-    --spacing-7: 4rem;
-    --spacing-8: 6rem;
-    --spacing-base: var(--spacing-4);
 }
 
 /* Theme colours */

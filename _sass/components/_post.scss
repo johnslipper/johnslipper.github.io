@@ -1,10 +1,10 @@
 .post {
     .post__title {
-        margin-bottom: var(--spacing-2);
+        margin-bottom: 0.5rem;
     }
 
     .post__meta {
-        margin-bottom: var(--spacing-6);
+        margin-bottom: 2rem;
         color: var(--category-color);
         text-transform: uppercase;
     }
@@ -26,7 +26,7 @@
     }
 
     .post__figure {
-        margin-bottom: var(--spacing-5);
+        margin-bottom: 1.5rem;
     }
 
     .post__image {
@@ -35,7 +35,7 @@
 
     .post__caption {
         font-size: 0.9em;
-        margin-top: var(--spacing-1);
+        margin-top: 0.25rem;
     }
 
     .post__content {
@@ -55,15 +55,15 @@
 
     .post__gallery {
         .post__image {
-            margin-bottom: var(--spacing-6);
+            margin-bottom: 2rem;
         }
     }
 
     .post__update,
     .post__tags {
         display: inline-block;
-        padding: var(--spacing-4) var(--spacing-6);
-        margin-bottom: var(--spacing-6);
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
         background-color: var(--body-background-color);
         clip-path: polygon(1% 0, 100% 0, 99% 100%, 0% 100%);
         font-size: 0.9em;
@@ -78,7 +78,7 @@
 
         span {
             color: var(--heading-color);
-            margin-right: var(--spacing-2);
+            margin-right: 0.5rem;
         }
 
         li:not(:last-of-type):after {
@@ -87,7 +87,7 @@
     }
 
     .post__actions {
-        margin: var(--spacing-6) -1rem;
+        margin: 2rem -1rem;
         display: flex;
         li {
             margin-left: 1rem;
@@ -102,6 +102,6 @@
     }
 
     .post__nav {
-        margin: var(--spacing-6) 0;
+        margin: 2rem 0;
     }
 }

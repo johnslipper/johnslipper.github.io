@@ -38,8 +38,8 @@
             width: auto;
             height: auto;
             overflow: visible;
-            padding: var(--spacing-4);
-            margin: var(--spacing-4);
+            padding: 1rem;
+            margin: 1rem;
             background-color: var(--layout-wrapper-background-color);
             border: 5px solid var(--link-color);
         }
@@ -67,9 +67,9 @@
     }
 
     .layout__articles {
-        margin-top: var(--spacing-6);
+        margin-top: 2rem;
         > article {
-            margin-bottom: var(--spacing-7);
+            margin-bottom: 4rem;
         }
     }
 
@@ -106,7 +106,7 @@
     @media (min-width: $breakpoints-5) {
         .layout__articles {
             > article {
-                margin-bottom: var(--spacing-8);
+                margin-bottom: 6rem;
             }
         }
     }

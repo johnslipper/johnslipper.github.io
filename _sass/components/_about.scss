@@ -2,7 +2,7 @@
     .about__wrapper {
         display: inline-grid;
         grid-template-columns: auto auto;
-        grid-gap: var(--spacing-5);
+        grid-gap: 1.5rem;
     }
 
     .about__photo {
@@ -14,9 +14,9 @@
 
     .about__description {
         font-size: 0.85em;
-        margin-top: var(--spacing-4);
+        margin-top: 1rem;
         p {
-            margin-bottom: var(--spacing-2);
+            margin-bottom: 0.5rem;
         }
     }
 
