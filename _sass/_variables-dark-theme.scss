@@ -2,7 +2,7 @@
 @include defineColorVariable(--outline-color, neutral, lightest);
 
 /* Body */
-@include defineColorVariable(--body-color, neutral, light);
+@include defineColorVariable(--body-color, neutral, mediumLight);
 @include defineColorVariable(--body-background-color, neutral, darkest);
 
 /* Layout */
