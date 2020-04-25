@@ -2,6 +2,7 @@
     padding: calc(var(--layout-wrapper-padding-sm) / 2);
     position: relative;
     z-index: 2;
+
     &::before {
         content: "";
         position: absolute;
@@ -13,9 +14,31 @@
         z-index: 0;
         clip-path: polygon(0% 33%, 100% 0%, 100% 100%, 0% 100%);
     }
+
     > * {
         position: relative;
         z-index: 1;
+    }
+
+    .footer__links {
+        font-size: 0.9em;
+        margin-block-start: 1.5rem;
+        margin-block-end: 1.5rem;
+        ul {
+            display: flex;
+            margin-inline-start: -1rem;
+            margin-inline-end: -1rem;
+            li {
+                margin-inline-start: 1rem;
+                margin-inline-end: 1rem;
+            }
+        }
+        a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            @include animated-underline(15%, 100%, 0.1rem, 0);
+        }
     }
 
     .theme-switcher {
@@ -32,6 +55,20 @@
 
         &::before {
             display: none;
+        }
+
+        .footer__links {
+            font-size: 0.8em;
+            margin-block-start: 1.5rem;
+            margin-block-end: 1.5rem;
+            ul {
+                display: grid;
+                margin: 0;
+                grid-gap: 0.5rem;
+                li {
+                    margin: 0;
+                }
+            }
         }
 
         .theme-switcher {
