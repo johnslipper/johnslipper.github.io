@@ -1,6 +1,5 @@
 ---
 title: Accessibility > John Slipper - Web Developer
-category: Accessibility
 layout: page
 ---
 
