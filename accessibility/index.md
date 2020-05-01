@@ -31,4 +31,4 @@ In addition to testing in Safari using VoiceOver I also want to spend time with 
 
 ## Send me feedback
 
-I care deeply about accessibility, but I’m always learning more about it. If you have any issues using any part of this website, please do contact me. I would welcome your feedback or suggestions.
+I’m always learning more about accessibility and want to keep improving the site. If you have any issues using any part of this website, please do contact me or [create an issue](https://github.com/johnslipper/johnslipper.github.io/issues) in the GitHub repository. I would welcome your feedback or suggestions.
