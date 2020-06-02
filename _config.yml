@@ -21,7 +21,7 @@
 name: John Slipper - Web Developer
 description: >- # this means to ignore newlines until next unindented section
   <p>Hi! My name is John Slipper.</p>
-  <p>I am a frontend developer in Auckland, New Zealand.</p>
+  <p>I do product management & frontend development in Auckland, New Zealand.</p>
 exclude: [README.md, Gemfile, Gemfile.lock, package.json]
 permalink: /:title
 comments: false
