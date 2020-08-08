@@ -67,9 +67,9 @@
     @media (min-width: $breakpoints-3) {
         .header__wrapper {
             position: fixed;
-            inset-inline-start: 0;
-            inset-block-end: 0;
-            inset-block-start: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
             width: 23%;
             max-width: var(--layout-header-max-width);
             flex-direction: column;

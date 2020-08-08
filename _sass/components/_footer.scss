@@ -6,10 +6,10 @@
     &::before {
         content: "";
         position: absolute;
-        inset-block-start: 0;
-        inset-inline-start: 0;
-        inset-inline-end: 0;
-        inset-block-end: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         background-color: var(--body-background-color);
         z-index: 0;
         clip-path: polygon(0% 33%, 100% 0%, 100% 100%, 0% 100%);
@@ -47,8 +47,8 @@
 
     @media (min-width: $breakpoints-3) {
         position: fixed;
-        inset-block-end: 0;
-        inset-inline-end: 0;
+        bottom: 0;
+        right: 0;
         padding: 1.5rem 1.5rem 1.5rem 2rem;
         background-color: var(--header-background-color);
         clip-path: polygon(10% 10%, 100% 0%, 100% 100%, 0% 100%);
