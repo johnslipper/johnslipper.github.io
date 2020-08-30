@@ -7,13 +7,12 @@
 
 const themes = {
     light: "light",
-    dark: "dark"
+    dark: "dark",
 };
 const dataAttribute = "data-theme";
 const checkedAttribute = "aria-checked";
 const hiddenAttribute = "hidden";
 const localStorageKey = "theme";
-const localStorageValue = localStorage.getItem(localStorageKey);
 
 // Check if the OS is set to prefer the dark colour scheme
 function userPrefersDarkThemeInOs() {
@@ -33,9 +32,20 @@ function getThemeAttribute() {
     return document.documentElement.getAttribute(dataAttribute);
 }
 
-// Set the local storage value for other pages and return visits
+// Get the local storage value
+function getLocalStorage() {
+    if (!window.localStorage) {
+        return;
+    }
+    return window.localStorage.getItem(localStorageKey);
+}
+
+// Set the local storage value
 function setLocalStorage(theme) {
-    localStorage.setItem(localStorageKey, theme);
+    if (!window.localStorage) {
+        return;
+    }
+    window.localStorage.setItem(localStorageKey, theme);
 }
 
 // Set the checked attribute on the switch toggle element
@@ -57,9 +67,9 @@ function switchTheme(toggleSwitch) {
 }
 
 // Initialise the theme switch element
-function initThemeToggleSwitch() {
+function initThemeToggleSwitch(switchButtonSelector) {
     // Get theme toggle switch
-    const toggleSwitch = document.querySelector(".theme-switcher button");
+    const toggleSwitch = document.querySelector(switchButtonSelector);
     if (getThemeAttribute() === themes.dark) {
         setSwitch(true, toggleSwitch);
     }
@@ -72,14 +82,13 @@ function initThemeToggleSwitch() {
     );
 
     // Show theme toggle
-    document
-        .querySelector(".js-theme-switcher")
-        .removeAttribute(hiddenAttribute);
+    document.querySelector(".theme-switcher").removeAttribute(hiddenAttribute);
 }
 
 /* Main theme initialisation */
 function initTheme() {
     /* Check for local storage or OS level preference */
+    const localStorageValue = getLocalStorage();
     if (localStorageValue) {
         setThemeAttribute(localStorageValue);
     } else if (userPrefersDarkThemeInOs()) {
@@ -94,4 +103,6 @@ function initTheme() {
 initTheme();
 
 /* Wait until DOM loaded before setting up toggle switch element */
-window.addEventListener("DOMContentLoaded", initThemeToggleSwitch);
+window.addEventListener("DOMContentLoaded", () =>
+    initThemeToggleSwitch("#themeSwitcher")
+);

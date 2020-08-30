@@ -22,9 +22,13 @@
 @include defineColorVariable(--category-color, first, mediumDark);
 
 /* Theme switcher */
-@include defineColorVariable(--theme-switcher-active-color, neutral, lightest);
 @include defineColorVariable(
-    --theme-switcher-active-background-color,
-    first,
-    mediumDark
+    --theme-switcher-background-color,
+    neutral,
+    lightest
+);
+@include defineColorVariable(
+    --theme-switcher-highlight-background-color,
+    neutral,
+    medium
 );
