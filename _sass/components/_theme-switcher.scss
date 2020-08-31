@@ -1,6 +1,5 @@
 .theme-switcher {
     --theme-switcher-transition-duration: 250ms;
-    // font-size: 1rem;
     [role="switch"] {
         display: block;
         position: relative;
@@ -44,8 +43,7 @@
 
         .theme-switcher__icon {
             height: 1.25em;
-            transition: transform var(--theme-switcher-transition-duration)
-                ease-in;
+            transform: translateY(0%);
         }
 
         &::before {
@@ -57,17 +55,25 @@
             top: 0;
             left: 0;
             z-index: 1;
-            transition: transform 250ms;
+            transition: transform var(--theme-switcher-transition-duration);
         }
 
         &[aria-checked="false"] {
             &::before {
                 transform: translateX(100%);
             }
-            .theme-switcher__state:first-child {
-                opacity: 0;
-                .theme-switcher__icon {
-                    transform: translateY(-100%);
+            .theme-switcher__state {
+                &:first-child {
+                    opacity: 0;
+                    .theme-switcher__icon {
+                        transform: translateY(-200%);
+                    }
+                }
+                &:last-child {
+                    .theme-switcher__icon {
+                        transition: transform
+                            var(--theme-switcher-transition-duration) ease-in;
+                    }
                 }
             }
         }
@@ -76,10 +82,18 @@
             &::before {
                 transform: translateX(0%);
             }
-            .theme-switcher__state:last-child {
-                opacity: 0;
-                .theme-switcher__icon {
-                    transform: translateY(100%);
+            .theme-switcher__state {
+                &:first-child {
+                    .theme-switcher__icon {
+                        transition: transform
+                            var(--theme-switcher-transition-duration) ease-in;
+                    }
+                }
+                &:last-child {
+                    opacity: 0;
+                    .theme-switcher__icon {
+                        transform: translateY(200%);
+                    }
                 }
             }
         }
