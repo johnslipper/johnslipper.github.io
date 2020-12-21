@@ -46,7 +46,6 @@ gallery:
 	url: '/img/posts-full/sik-app-6.png',
 	caption: 'Settings screen'
 }
-link-files: https://github.com/johnslipper/sik-ionic
 ---
 
 Fourth iteration of a personal project to store the songs I've learned over the years on my smartphone.
@@ -57,9 +56,9 @@ The second purpose of this app is to act as my version of the 'MVC Todo' app in 
 
 This app now runs natively on my phone via Ionic and Cordova and features:
 
-- Offline local song database storage via PouchDB (IndexedDB or WebSQL)
-- Real-time synchronisation with Cloudant service (resumes whenever phone becomes online)
-- Add chords sections & song lyrics (with online search)
-- Guitar chord visualisation on fretboard via jTab
-- Attach song artwork via iTunes API
-- Song filtering
+-   Offline local song database storage via PouchDB (IndexedDB or WebSQL)
+-   Real-time synchronisation with Cloudant service (resumes whenever phone becomes online)
+-   Add chords sections & song lyrics (with online search)
+-   Guitar chord visualisation on fretboard via jTab
+-   Attach song artwork via iTunes API
+-   Song filtering
