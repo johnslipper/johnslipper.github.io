@@ -57,6 +57,27 @@
         ol {
             list-style-type: decimal;
         }
+        blockquote {
+            position: relative;
+            padding-left: 1.25rem;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 0.5rem;
+                background-color: var(--body-color);
+            }
+        }
+
+        pre {
+            padding: 1rem 2rem;
+            margin-block-end: 2rem;
+            background-color: var(--body-background-color);
+            clip-path: polygon(1% 0, 100% 0, 99% 100%, 0% 100%);
+            font-size: 0.9em;
+        }
     }
 
     .post__gallery {
