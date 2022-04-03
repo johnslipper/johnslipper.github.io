@@ -92,11 +92,11 @@ There are actually [a number of ways](https://www.scottohara.me/blog/2017/04/14/
 
 ## Actions & navigation
 
-    "<a> goes somewhere, <button> does something"
+> "Anchor tags go somewhere, buttons do something"
 
 The above statement is a good basic rule of thumb when deciding the best element for triggering an action. Another way to put it is:
 
-    “if an interaction doesn’t have a meaningful href, it’s a <button>”
+> “If an interaction doesn’t have a meaningful href, it’s a button”
 
 Using either of these elements provides a large amount of in-built functionality within the browser such as:
 
