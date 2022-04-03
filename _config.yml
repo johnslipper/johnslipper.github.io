@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-name: John Slipper - Web Developer
+title: John Slipper - Web Developer
 description: >- # this means to ignore newlines until next unindented section
   <p>Hi! My name is John Slipper.</p>
   <p>I do product management & frontend development in Auckland, New Zealand.</p>
