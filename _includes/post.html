@@ -19,11 +19,12 @@
     <div class="post__update"><strong>UPDATE:</strong> {{ page.update }}</div>
     {% endif %} {% if page.hero %}
     <div class="post__hero">
+        <div class="post__image">
         <img
-            class="post__image"
             src="{{ page.hero.url }}"
             alt="{{ page.hero.alt }}"
         />
+    </div>
         {% if page.hero.credit %}
         <p class="post__caption">
             Photo by

@@ -34,7 +34,7 @@
 
     .post-preview_thumbnail {
         display: block;
-        border: 5px solid var(--body-background-color);
+        @include blurred-gradient-border();
         img {
             object-fit: cover;
             width: 100%;

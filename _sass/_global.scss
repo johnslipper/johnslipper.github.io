@@ -98,3 +98,29 @@ a[href] {
         }
     }
 }
+
+@mixin blurred-gradient-border($border-width: -2px) {
+    position: relative;
+        > * {
+            position: relative;
+            z-index: 1;
+        }
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: $border-width;
+        left: $border-width;
+        right: $border-width;
+        bottom: $border-width;
+        background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+      }
+      &::before {
+        filter: blur(10px);
+        opacity: 0.33;
+        z-index: 0;
+      }
+      &::after {
+        z-index: 0;
+      }
+}
