@@ -37,7 +37,7 @@
             display: inline-block;
             color: var(--link-color);
             text-decoration: none;
-            @include animated-underline(15%, 100%, 0.1rem, 0);
+            @include animated-underline();
         }
     }
 
