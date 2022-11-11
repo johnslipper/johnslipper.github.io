@@ -8,6 +8,7 @@
         padding: 1rem calc(var(--layout-wrapper-padding-sm) / 2);
         padding-block-end: 0.5rem;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        backdrop-filter: blur(8px);
     }
 
     .header__logo {

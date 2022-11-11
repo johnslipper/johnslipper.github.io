@@ -15,7 +15,7 @@
 @include defineColorVariable(--heading-underline-color, neutral, mediumDark);
 
 /* Header */
-@include defineColorVariable(--header-background-color, neutral, lightest);
+@include defineColorVariable(--header-background-color, neutral, lightest, 65%);
 @include defineColorVariable(--logo-dot-color, first, dark);
 
 /* Articles */
