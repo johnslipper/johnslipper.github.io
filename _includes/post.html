@@ -43,11 +43,12 @@
     {% if page.gallery %}
     <div class="post__gallery">
         {% for image in page.gallery %}
-        <img
-            class="post__image"
-            src="{{ image.url }}"
-            alt="{{ image.caption }}"
-        />
+        <div class="post__image">
+            <img
+                src="{{ image.url }}"
+                alt="{{ image.caption }}"
+            />
+        </div>
         {% endfor %}
     </div>
     {% endif %} {% if page.codepen-embed %} {% include codepen-embed.html %} {%
