@@ -4,7 +4,7 @@
     .header__wrapper {
         display: flex;
         justify-content: space-between;
-        background-color: var(--header-background-color);
+        background-color: var(--header-background-color-filter);
         padding: 1rem calc(var(--layout-wrapper-padding-sm) / 2);
         padding-block-end: 0.5rem;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
@@ -101,6 +101,8 @@
             padding: var(--layout-wrapper-padding-lg)
                 var(--layout-wrapper-padding-sm);
             padding-inline-end: 4%;
+            backdrop-filter: none;
+            background-color: var(--header-background-color);
         }
 
         .header__navigation {

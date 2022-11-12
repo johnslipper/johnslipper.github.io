@@ -9,7 +9,8 @@
 @include defineColorVariable(--layout-wrapper-background-color, neutral, dark);
 
 /* Header */
-@include defineColorVariable(--header-background-color, neutral, darkest, 65%);
+@include defineColorVariable(--header-background-color, neutral, darkest);
+@include defineColorVariable(--header-background-color-filter, neutral, darkest, 65%);
 @include defineColorVariable(--logo-color, neutral, lightest);
 
 /* Anchor links */
