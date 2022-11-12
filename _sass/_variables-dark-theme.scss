@@ -10,7 +10,7 @@
 
 /* Header */
 @include defineColorVariable(--header-background-color, neutral, darkest, 65%);
-@include defineColorVariable(--logo-dot-color, neutral, lightest);
+@include defineColorVariable(--logo-color, neutral, lightest);
 
 /* Anchor links */
 @include defineColorVariable(--link-color, neutral, lightest);

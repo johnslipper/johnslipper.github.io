@@ -13,27 +13,49 @@
 
     .header__logo {
         display: block;
+        position: relative;
         width: 4rem;
         flex-shrink: 0;
         margin-inline-end: 1.25rem;
 
         .logo__dot {
-            fill: var(--logo-dot-color);
-            transition: transform 100ms;
+            display: none;
+        }
+
+        .logo__js {
+            transition: all 250ms;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 7%;
+            left: 5%;
+            width: 14%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
             animation: bounce 500ms;
-            transform-origin: left bottom;
+        }
+
+        &::before {
+            filter: blur(6px);
         }
 
         &:hover,
-        &:focus {
-            .logo__dot {
-                transform: scale(1.1);
+        &:focus,
+        &:active {
+            &::before,
+            &::after {
+                animation: rotate 2s linear infinite;
             }
         }
-
+        
         &:active {
-            .logo__dot {
-                transform: scale(0.9);
+            .logo__js path {
+                fill: var(--logo-color);
             }
         }
     }
@@ -138,5 +160,11 @@
 
     90% {
         transform: translate3d(0, -4px, 0);
+    }
+}
+
+@keyframes rotate {
+    to {
+        transform:rotate(1turn)
     }
 }

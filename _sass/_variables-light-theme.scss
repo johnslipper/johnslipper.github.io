@@ -16,7 +16,7 @@
 
 /* Header */
 @include defineColorVariable(--header-background-color, neutral, lightest, 65%);
-@include defineColorVariable(--logo-dot-color, first, dark);
+@include defineColorVariable(--logo-color, first, dark);
 
 /* Articles */
 @include defineColorVariable(--category-color, first, mediumDark);
