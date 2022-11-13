@@ -31,7 +31,7 @@
             content: "";
             display: block;
             position: absolute;
-            bottom: 7%;
+            bottom: 22%;
             left: 5%;
             width: 14%;
             aspect-ratio: 1;
@@ -130,6 +130,11 @@
             max-width: 10rem;
             margin-inline-start: 25%;
             margin-inline-end: 0;
+    
+            &::before,
+            &::after {
+                bottom: 7%;
+            }
         }
 
         .header__about {
