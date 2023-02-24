@@ -1,0 +1,29 @@
+---
+date: 2023/02/24 18:00:00 +1300
+title: The Lake Interactive Illustration
+category: demos
+category-title: Experiment
+tags:
+- a11y
+- CSS
+- HTML
+- JS
+status: publish
+thumb: "/img/posts-thumb/the-lake.jpg"
+hero:
+    {
+        url: "/img/posts-full/the-lake.jpg",
+        alt: "A preview of the lake illustration set to evening time",
+    }
+codepen-embed: {
+	id: gOKObdW,
+	height: 400
+}
+---
+
+Experimenting using the recent [has](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) CSS pseudo-class to interactively change an illustration to different times of the day.
+
+When a time of day is selected the CSS of the inline SVG is modified to change colour, position and visibility of parts of the illustration. This means no JavaScript is required to achieve the effect.
+
+The illustration was created with a combination of free assets to attempt to make it "look like a bought one".
+
