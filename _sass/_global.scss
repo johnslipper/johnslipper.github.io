@@ -103,6 +103,7 @@ a[href] {
         > * {
             position: relative;
             z-index: 1;
+            border-radius: 1rem;
         }
       &::before,
       &::after {
@@ -113,6 +114,7 @@ a[href] {
         right: $border-width;
         bottom: $border-width;
         background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+        border-radius: 1rem;
       }
       &::before {
         filter: blur(10px);
