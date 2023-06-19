@@ -97,22 +97,20 @@ a[href] {
     }
 }
 
-@mixin blurred-gradient-border($border-width: -2px) {
+@mixin blurred-gradient-border($border-width: 0.4rem) {
     position: relative;
     max-width: max-content;
         > * {
             position: relative;
             z-index: 1;
             border-radius: 1rem;
+            border: $border-width solid transparent;
         }
       &::before,
       &::after {
         content: '';
         position: absolute;
-        top: $border-width;
-        left: $border-width;
-        right: $border-width;
-        bottom: $border-width;
+        inset: 0;
         background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
         border-radius: 1rem;
       }
