@@ -40,6 +40,10 @@
             width: 100%;
             height: 100%;
         }
+        &:hover,
+        &:focus {
+            animation: pulse-scale 500ms ease-in-out;
+        }
     }
 
     @media (min-width: $breakpoints-5) {

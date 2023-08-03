@@ -103,7 +103,7 @@ a[href] {
     initial-value: 0deg;
   }
 
-  @keyframes rotate-gradient {
+@keyframes rotate-gradient {
     from {
         --gradient-angle: 0deg;
     }
@@ -111,6 +111,16 @@ a[href] {
         --gradient-angle: 359deg;
     }
 }
+
+@keyframes pulse-scale {
+    from, to {
+      scale: 1;
+    }
+    
+    50% {
+      scale: 1.05;
+    }
+  }
 
 @mixin blurred-gradient-border($border-width: 0.4rem) {    
     position: relative;
