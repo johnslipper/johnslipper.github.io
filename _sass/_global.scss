@@ -97,7 +97,22 @@ a[href] {
     }
 }
 
-@mixin blurred-gradient-border($border-width: 0.4rem) {
+@property --gradient-angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+
+  @keyframes rotate-gradient {
+    from {
+        --gradient-angle: 0deg;
+    }
+    to {
+        --gradient-angle: 359deg;
+    }
+}
+
+@mixin blurred-gradient-border($border-width: 0.4rem) {    
     position: relative;
     max-width: max-content;
         > * {
@@ -111,8 +126,9 @@ a[href] {
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
         border-radius: 1rem;
+        background: linear-gradient(var(--gradient-angle, 270deg), #ffd800, #ff5520, #750cf2, #0cbcf2);
+        animation: rotate-gradient 10s infinite linear;
       }
       &::before {
         filter: blur(10px);
