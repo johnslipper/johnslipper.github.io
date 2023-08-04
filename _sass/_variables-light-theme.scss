@@ -33,3 +33,6 @@
     neutral,
     medium
 );
+
+/* Spotlight */
+@include defineColorVariable(--spotlight-color, neutral, lightest);
