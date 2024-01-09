@@ -43,12 +43,12 @@ gallery:
 	url: "/img/posts-full/sik-svelte-app-6.jpg",
 	caption: "Editing the frets and fingering of a chord"
 }
-link-website: "https://sik.app"
+link-website: "https://songs-i-know-2020.web.app"
 ---
 
 Ever pick up a guitar and can't remember a song to play?
 
-Songs I Know is an app for getting inspiration when holding a guitar and nothing comes to mind. Sign up now at [sik.app](https://sik.app) and add the songs you know.
+Songs I Know is an app for getting inspiration when holding a guitar and nothing comes to mind. [Visit the app](https://songs-i-know-2020.web.app) and add the songs you know.
 
 ## App features
 
