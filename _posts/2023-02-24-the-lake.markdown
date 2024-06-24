@@ -4,7 +4,6 @@ title: The Lake Interactive Illustration
 category: demos
 category-title: Experiment
 tags:
-- a11y
 - CSS
 - HTML
 - JS
