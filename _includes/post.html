@@ -40,6 +40,10 @@
         {{ content }}
     </div>
 
+    {% if page.codepen-embed %} 
+    {% include codepen-embed.html %} 
+    {% endif %}
+
     {% if page.gallery %}
     <div class="post__gallery">
         {% for image in page.gallery %}
@@ -51,8 +55,7 @@
         </div>
         {% endfor %}
     </div>
-    {% endif %} {% if page.codepen-embed %} {% include codepen-embed.html %} {%
-    endif %}
+    {% endif %}
 
     <ul class="post__actions">
         {% if page.link-website %}
